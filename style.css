@@ -18,9 +18,6 @@
 .header {
   background: #3c3a39;
   padding: 12px 24px;
-}
-
-.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
