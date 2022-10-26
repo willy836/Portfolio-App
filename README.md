@@ -10,48 +10,37 @@
 - HTML
 - CSS
 
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+To use this software you are going to need npm
+
 
 ### Setup
+To set up this application:
+    -Clone the repo (git clone https://github.com/willy836/Portfolio-App.git)
+    
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+To install this application, install npm packages:
+    -npm install
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/willy836)
-- Twitter: [@twitterhandle](https://twitter.com/Kimiri836)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilson-kimiri-420396235/)
+- GitHub: [@willy836](https://github.com/willy836)
+- Twitter: [@Kimiri836](https://twitter.com/Kimiri836)
+- LinkedIn: [Wilson Kimiri](https://www.linkedin.com/in/wilson-kimiri-420396235/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/willy836/Portfolio-App/issues).
 
 ## Show your support
 

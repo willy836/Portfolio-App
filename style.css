@@ -11,7 +11,6 @@
 }
 
 .container {
-  max-width: 375px;
   width: 100%;
   margin: 0 auto;
 }
@@ -58,7 +57,7 @@
 }
 
 .headline-content {
-  padding: 0 24px;
+  margin: 0 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -66,6 +65,7 @@
 }
 
 .primary-text {
+  max-width: 327px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -74,6 +74,7 @@
   letter-spacing: 0.37px;
   color: #ff6b00;
   text-transform: capitalize;
+  
 }
 
 .supporting-text {
@@ -86,6 +87,7 @@
 }
 
 .description {
+  max-width: 327px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +111,7 @@
 
 .mobile-headline-img {
   position: absolute;
-  left: 61%;
+  left: 58%;
   top: 40%;
   order: 3;
 }
