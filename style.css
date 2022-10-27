@@ -125,7 +125,7 @@
 }
 
 .work-heading {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -134,7 +134,6 @@
   text-transform: capitalize;
   margin-bottom: 24px;
   padding: 10px 0;
-  
 }
 
 .work-hr {
@@ -191,7 +190,6 @@
   display: flex;
   padding: 0 24px;
   gap: 12px;
-  
 }
 
 .work .lang {
@@ -204,13 +202,13 @@
 }
 
 .btn {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  background: #FF6B00;
+  background: #ff6b00;
   color: #fff;
   cursor: pointer;
   width: fit-content;
@@ -233,7 +231,6 @@
   grid-auto-rows: 386px;
   row-gap: 24px;
   justify-content: center;
-  
 }
 
 .grid-item {
@@ -258,7 +255,6 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-  
 }
 
 .card-text {
@@ -279,7 +275,7 @@
 }
 
 .card-desc {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -288,7 +284,7 @@
 }
 
 .grid-item .tags {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -308,13 +304,13 @@
 
 .grid-item .card-btn {
   width: 100%;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  background: #FF6B00;
+  background: #ff6b00;
   color: #fff;
   cursor: pointer;
   padding: 12px;
@@ -355,10 +351,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  
 }
 
-.about .about-text{
+.about .about-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -402,7 +397,6 @@
   position: absolute;
   top: 83%;
   left: 57%;
-  
 }
 
 .about .about-hr {
@@ -439,18 +433,18 @@
   width: 14px;
   height: 14px;
 }
+
 .about .frame-title {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  
 }
 
 .about .block-list {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -460,5 +454,4 @@
   flex-direction: column;
   text-align: center;
   gap: 8px;
-  
 }
