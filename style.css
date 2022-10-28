@@ -45,12 +45,14 @@
 }
 
 .headline {
-  background: #1c1a19;
-  padding: 120px 0;
+  background-color: #1c1a19;
+  background-image: url(images/headline/mobile-headline-img.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;  
+  padding: 120px 0 160px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  position: relative;
 }
 
 .headline-content {
@@ -83,7 +85,6 @@
 }
 
 .description {
-  max-width: 327px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -103,13 +104,7 @@
   gap: 20px;
   padding: 10px;
   align-items: center;
-}
-
-.mobile-headline-img {
-  position: absolute;
-  left: 60.5%;
-  top: 40%;
-  order: 3;
+ 
 }
 
 /* ----work section---- */
@@ -323,11 +318,6 @@
   color: #f55800;
 }
 
-.button:enabled {
-  background: #f55800;
-  color: #fff;
-}
-
 .button:active {
   background: #e05304;
   color: #f4f1f0;
@@ -350,7 +340,8 @@
 .top-block {
   display: flex;
   flex-direction: column;
-  position: relative;
+  background: url(images/about/mobile-about.png) no-repeat right bottom;
+  padding-bottom: 200px;
 }
 
 .about .about-text {
@@ -358,6 +349,7 @@
   flex-direction: column;
   gap: 24px;
   padding: 0 24px;
+  
 }
 
 .about .about-title {
@@ -393,17 +385,11 @@
   border: none;
 }
 
-.about .mobile-abt-img {
-  position: absolute;
-  top: 83%;
-  left: 57%;
-}
-
 .about .about-hr {
   border: none;
   height: 1px;
   background: #fff;
-  margin-top: 55.5%;
+  margin-top: 8px;
   margin-right: 24px;
   margin-left: 24px;
 }
