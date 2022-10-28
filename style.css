@@ -48,7 +48,7 @@
   background-color: #1c1a19;
   background-image: url(images/headline/mobile-headline-img.png);
   background-repeat: no-repeat;
-  background-position: right bottom;  
+  background-position: right bottom;
   padding: 120px 0 160px;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,6 @@
   gap: 20px;
   padding: 10px;
   align-items: center;
- 
 }
 
 /* ----work section---- */
@@ -349,7 +348,6 @@
   flex-direction: column;
   gap: 24px;
   padding: 0 24px;
-  
 }
 
 .about .about-title {
