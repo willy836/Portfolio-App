@@ -439,3 +439,109 @@
   text-align: center;
   gap: 8px;
 }
+
+/* -------------Contact Section------------- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.contact .contact-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.contact .contact-form {
+  margin: 0 24px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact label {
+  display: none;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.contact textarea {
+  background: #fbf8f7;
+  min-height: 114px;
+  border: 0;
+}
+
+.contact .contact-btn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  background: #ff6b00;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  border: 0;
+}
+
+.contact .contact-btn:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
+.contact .contact-btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.contact .contact-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.contact .contact-button {
+  text-align: center;
+}
+
+.contact-hr {
+  border: none;
+  height: 1px;
+  background: #dfe1e6;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  gap: 20px;
+}
