@@ -463,7 +463,6 @@
   color: #172b4d;
   text-align: center;
   padding: 0 24px;
- 
 }
 
 .contact .contact-form {
@@ -474,8 +473,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  
-  
 }
 
 .contact label {
@@ -534,7 +531,6 @@
 .contact .contact-button {
   text-align: center;
 }
-
 
 .contact-hr {
   border: none;
