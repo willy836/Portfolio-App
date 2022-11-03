@@ -774,4 +774,41 @@
   .work .hide-btn {
     display: none;
   }
+
+  /* ---------About section----------- */
+
+  .about {
+    background: #262626;
+    padding: 90px 0 130px;
+  }
+
+  .about .top-block {
+    background: url(images/about/desktop-about.svg) no-repeat right top;
+    padding-bottom: 0;
+    margin-bottom: 120px;
+  }
+
+  .about .about-text {
+    padding:  0;
+    margin: 40px 0 0 142px;
+    max-width: 566px;
+    
+  }
+
+  .about .about-desc {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .about .about-hr {
+    
+    margin-top: 0;
+    margin-right: 142px;
+    margin-left: 142px;
+  }
+
 }
