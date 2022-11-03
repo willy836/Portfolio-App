@@ -53,7 +53,6 @@
   background-color: #1c1a19;
   background-image: url(images/headline/mobile-headline-img.png);
   background-repeat: no-repeat;
-  
   background-position: right bottom;
   padding: 120px 0 160px;
   display: flex;
@@ -66,7 +65,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  
 }
 
 .primary-text {
@@ -100,7 +98,6 @@
 
 .social-media {
   padding: 0 24px;
-  
 }
 
 .headline ul {
@@ -575,7 +572,7 @@
   .header {
     padding: 26px 150px;
   }
-  
+
   .header a {
     color: #fff;
   }
@@ -587,7 +584,7 @@
   .links {
     height: auto;
     display: flex;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -635,13 +632,11 @@
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
-
   }
 
   .social-media {
     order: 0;
     margin-left: 12px;
-    
   }
 
   .headline ul {
@@ -660,7 +655,6 @@
     gap: 24px;
     padding: 0;
     margin-bottom: 114px;
-    
   }
 
   .work .work-heading {
@@ -674,7 +668,7 @@
   }
 
   .work .work-hr {
-    margin: auto 0; 
+    margin: auto 0;
   }
 
   .work .featured-work {
@@ -684,7 +678,6 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    
   }
 
   .work .mobile-gym {
@@ -705,14 +698,12 @@
     font-size: 40px;
     line-height: 52px;
     padding: 0;
-    
   }
 
   .work .para {
     font-size: 20px;
     line-height: 28px;
     padding: 0;
-    
   }
 
   .work .langs {
@@ -723,7 +714,7 @@
     padding: 0;
   }
 
-  /* Grid styles */  
+  /* Grid styles */
 
   .work .grid-container {
     width: 1156px;
@@ -766,7 +757,6 @@
 
   .work .desktop-para {
     display: block;
-    
   }
 
   .work .card-desc {
@@ -791,10 +781,9 @@
   }
 
   .about .about-text {
-    padding:  0;
+    padding: 0;
     margin: 40px 0 0 142px;
     max-width: 566px;
-    
   }
 
   .about .about-desc {
@@ -807,7 +796,6 @@
   }
 
   .about .about-hr {
-    
     margin-top: 0;
     margin-right: 142px;
     margin-left: 142px;
@@ -835,37 +823,28 @@
     gap: 24px;
     margin-left: 135px;
     margin-right: 142px;
-    
   }
 
   .contact .contact-text {
-    
     width: 455px;
     font-size: 40px;
     line-height: 52px;
     color: #262626;
     text-align: left;
     padding: 0;
-    
-    
   }
 
   .contact .contact-form {
-    
     width: 684px;
     margin: 0;
-    
   }
 
   .contact input,
   .contact textarea {
-  font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Roboto', sans-serif;
+  }
 
   .contact .contact-button {
     text-align: left;
   }
-  
-
-
 }
