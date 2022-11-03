@@ -2,7 +2,7 @@
 
 # Portfolio Application
 
-> This is a Portfolio Application built with HTML and CSS
+> This is a Portfolio Website built with HTML and CSS
 
 
 ## Built With
@@ -14,7 +14,7 @@
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-To use this software you are going to need npm
+To use this software you are going to need npm and node.js
 
 
 ### Setup
@@ -23,13 +23,16 @@ To set up this application:
     
 
 ### Install
-To install this application, install npm packages:
+To install this application, install npm packages and node.js:
     -npm install
+    -follow steps to install node.js
 
+### Usage
+This project can be used to practice html5 and css3
 
 ## Authors
 
-👤 **Author1**
+👤 **Wilson Kimiri**
 
 - GitHub: [@willy836](https://github.com/willy836)
 - Twitter: [@Kimiri836](https://twitter.com/Kimiri836)
