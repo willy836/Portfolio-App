@@ -16,6 +16,7 @@ body {
 
 .container {
   width: 100%;
+
   /* margin: 0 auto; */
 }
 
@@ -569,7 +570,6 @@ body {
 /* ----------------------DESKTOP VERSION STYLES----------------------- */
 
 @media screen and (min-width: 768px) {
-
   .header {
     padding: 26px 150px;
   }
@@ -722,13 +722,11 @@ body {
   /* Grid styles */
 
   .work .grid-container {
-    
     display: grid;
     grid-template-columns: repeat(2, 369px);
     grid-auto-rows: 435px;
     row-gap: 37px;
     column-gap: 30px;
-   
   }
 
   .work .mob-img {
@@ -807,17 +805,12 @@ body {
   }
 
   .about .bottom-block {
-    
     margin-top: 138px;
     padding: 0 13.7%;
-    
-    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
     gap: 17%;
-    
   }
 
   .about .block-list {
@@ -857,30 +850,23 @@ body {
   .contact .contact-button {
     text-align: left;
   }
-
 }
 
 @media screen and (min-width: 1170px) {
-  
   /* Work section */
 
   .work .recent-work {
-    
     width: 1133px;
-    
   }
 
   .work .featured-work {
-    
     display: flex;
     flex-direction: row;
-    
   }
 
   /* Grid styles */
 
   .work .grid-container {
-    
     display: grid;
     grid-template-columns: repeat(3, 369px);
     grid-auto-rows: 435px;
