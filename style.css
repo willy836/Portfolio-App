@@ -10,7 +10,10 @@
   text-decoration: none;
 }
 
+html,
 body {
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -592,18 +595,16 @@ body {
   }
 
   .headline {
-    background-image: url(images/headline/desktop-headline-img.svg);
-    background-repeat: no-repeat;
     background-position: right;
-    padding: 250px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 36px;
+    
   }
 
   .headline-content {
-    width: 40%;
+    width: 65%;
     margin: 0;
     order: 1;
   }
@@ -644,6 +645,8 @@ body {
   }
 
   /* Work section */
+
+  
 
   .work .recent-work {
     display: flex;
@@ -725,6 +728,9 @@ body {
     grid-auto-rows: 435px;
     row-gap: 37px;
     column-gap: 30px;
+    width: 790px;
+    margin: 0 auto;
+    
   }
 
   .work .mob-img {
@@ -770,22 +776,7 @@ body {
 
   /* ---------About section----------- */
 
-  .about {
-    background: #262626;
-    padding: 90px 0 130px;
-  }
-
-  .about .top-block {
-    background: url(images/about/desktop-about.svg) no-repeat right top;
-    padding-bottom: 0;
-    margin-bottom: 120px;
-  }
-
-  .about .about-text {
-    padding: 0;
-    margin: 40px 0 0 142px;
-    max-width: 566px;
-  }
+  
 
   .about .about-desc {
     font-family: 'Inter', sans-serif;
@@ -796,34 +787,47 @@ body {
     color: #f4f5f7;
   }
 
-  .about .about-hr {
-    margin-top: 0;
+  /* Contact section */
+
+  .contact .contact-me {
+    padding: 130px 0;
+    margin-left: 135px;
     margin-right: 142px;
-    margin-left: 142px;
   }
 
-  .about .bottom-block {
-    margin-top: 138px;
-    padding: 0 13.7%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 17%;
+  
+
+  
+}
+
+@media screen and (min-width: 1000px) {
+  /* About section */
+
+  .about {
+    background: #262626;
+    padding: 90px 0 130px;
   }
 
-  .about .block-list {
-    text-align: left;
+  .about .top-block {
+    
+    padding-bottom: 0;
+    margin-bottom: 120px;
+  }
+
+  .about .about-text {
+    padding: 0;
+    margin: 40px 0 0 142px;
+    max-width: 566px;
   }
 
   /* Contact section */
 
   .contact-me {
-    padding: 130px 0;
+    
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-left: 135px;
-    margin-right: 142px;
+   
   }
 
   .contact .contact-text {
@@ -851,6 +855,19 @@ body {
 }
 
 @media screen and (min-width: 1170px) {
+
+  /* Headline section */
+
+  .headline {
+    background-image: url(images/headline/desktop-headline-img.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 250px 0;
+  }
+
+  .headline-content {
+    width: 40%;
+  }
   /* Work section */
 
   .work .recent-work {
@@ -870,5 +887,34 @@ body {
     grid-auto-rows: 435px;
     row-gap: 37px;
     column-gap: 24px;
+    width: 100%;
+  }
+
+  .about .bottom-block {
+    margin-top: 138px;
+    padding: 0 13.7%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 17%;
+  }
+
+  .about .block-list {
+    text-align: left;
+  }
+
+  
+}
+
+@media screen and (min-width: 1240px) {
+  /* About section */
+  .about .top-block {
+    background: url(images/about/desktop-about.svg) no-repeat right top;
+   }
+
+   .about .about-hr {
+    margin-top: 0;
+    margin-right: 142px;
+    margin-left: 142px;
   }
 }
