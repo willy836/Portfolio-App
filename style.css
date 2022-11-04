@@ -600,7 +600,6 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 36px;
-    
   }
 
   .headline-content {
@@ -645,8 +644,6 @@ body {
   }
 
   /* Work section */
-
-  
 
   .work .recent-work {
     display: flex;
@@ -730,7 +727,6 @@ body {
     column-gap: 30px;
     width: 790px;
     margin: 0 auto;
-    
   }
 
   .work .mob-img {
@@ -776,8 +772,6 @@ body {
 
   /* ---------About section----------- */
 
-  
-
   .about .about-desc {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -794,10 +788,6 @@ body {
     margin-left: 135px;
     margin-right: 142px;
   }
-
-  
-
-  
 }
 
 @media screen and (min-width: 1000px) {
@@ -809,7 +799,6 @@ body {
   }
 
   .about .top-block {
-    
     padding-bottom: 0;
     margin-bottom: 120px;
   }
@@ -823,11 +812,9 @@ body {
   /* Contact section */
 
   .contact-me {
-    
     display: flex;
     flex-direction: row;
     gap: 24px;
-   
   }
 
   .contact .contact-text {
@@ -855,7 +842,6 @@ body {
 }
 
 @media screen and (min-width: 1170px) {
-
   /* Headline section */
 
   .headline {
@@ -868,6 +854,7 @@ body {
   .headline-content {
     width: 40%;
   }
+
   /* Work section */
 
   .work .recent-work {
@@ -902,17 +889,15 @@ body {
   .about .block-list {
     text-align: left;
   }
-
-  
 }
 
 @media screen and (min-width: 1240px) {
   /* About section */
   .about .top-block {
     background: url(images/about/desktop-about.svg) no-repeat right top;
-   }
+  }
 
-   .about .about-hr {
+  .about .about-hr {
     margin-top: 0;
     margin-right: 142px;
     margin-left: 142px;
