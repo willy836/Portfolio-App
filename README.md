@@ -30,7 +30,7 @@ To install this application, install npm packages and node.js:
 ### Usage
 This project can be used to practice html5 and css3
 
-## Authors
+## Author
 
 👤 **Wilson Kimiri**
 

@@ -10,9 +10,13 @@
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .header {
@@ -565,9 +569,6 @@
 /* ----------------------DESKTOP VERSION STYLES----------------------- */
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 1440px;
-  }
 
   .header {
     padding: 26px 150px;
@@ -650,7 +651,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1133px;
+    width: 80%;
     margin: 0 auto;
     gap: 24px;
     padding: 0;
@@ -676,7 +677,7 @@
     margin: 0 auto;
     margin-bottom: 24px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
   }
 
@@ -686,9 +687,13 @@
 
   .work .desktop-gym {
     display: block;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .work .right-block {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -717,13 +722,13 @@
   /* Grid styles */
 
   .work .grid-container {
-    width: 1156px;
-    margin: 0 auto;
+    
     display: grid;
-    grid-template-columns: repeat(3, 369px);
+    grid-template-columns: repeat(2, 369px);
     grid-auto-rows: 435px;
     row-gap: 37px;
-    column-gap: 24px;
+    column-gap: 30px;
+   
   }
 
   .work .mob-img {
@@ -802,12 +807,17 @@
   }
 
   .about .bottom-block {
+    
     margin-top: 138px;
-    padding: 0 142px;
+    padding: 0 13.7%;
+    
+    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 176px;
+    
+    gap: 17%;
+    
   }
 
   .about .block-list {
@@ -846,5 +856,35 @@
 
   .contact .contact-button {
     text-align: left;
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+  
+  /* Work section */
+
+  .work .recent-work {
+    
+    width: 1133px;
+    
+  }
+
+  .work .featured-work {
+    
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  /* Grid styles */
+
+  .work .grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 369px);
+    grid-auto-rows: 435px;
+    row-gap: 37px;
+    column-gap: 24px;
   }
 }
