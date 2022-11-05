@@ -36,6 +36,17 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+  animation: 1s ease-out 0.5s 1 spin;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hamburger {
@@ -104,6 +115,14 @@ body {
 
 .social-media {
   padding: 0 24px;
+}
+
+.social-media-img {
+  transition: transform 0.5s;
+}
+
+.social-media-img:hover {
+  transform: scale(1.5);
 }
 
 .headline ul {
@@ -594,6 +613,14 @@ body {
     gap: 20px;
   }
 
+  .links a {
+    transition: color 0.5s;
+  }
+
+  .links a:hover {
+    color: #f55800;
+  }
+
   .headline {
     background-position: right;
     display: flex;
@@ -649,8 +676,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    margin: 0 24px;
     gap: 24px;
     padding: 0;
     margin-bottom: 114px;
@@ -685,13 +711,14 @@ body {
 
   .work .desktop-gym {
     display: block;
-    width: 80%;
-    margin: 0 auto;
+    margin: 0 24px;
+    width: 100%;
   }
 
   .work .right-block {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -724,7 +751,7 @@ body {
     grid-template-columns: repeat(2, 369px);
     grid-auto-rows: 435px;
     row-gap: 37px;
-    column-gap: 30px;
+    column-gap: 12px;
     width: 790px;
     margin: 0 auto;
   }
@@ -787,6 +814,28 @@ body {
     padding: 130px 0;
     margin-left: 135px;
     margin-right: 142px;
+  }
+}
+
+@media screen and (min-width: 852px) {
+  .work .recent-work {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 114px;
+  }
+
+  .work .desktop-gym {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .work .right-block {
+    width: 80%;
+    padding: 0;
+  }
+
+  .work .grid-container {
+    column-gap: 37px;
   }
 }
 
@@ -875,6 +924,14 @@ body {
     row-gap: 37px;
     column-gap: 24px;
     width: 100%;
+  }
+
+  .work .grid-item {
+    transition: transform 0.5s;
+  }
+
+  .work .grid-item:hover {
+    transform: translateY(-10px);
   }
 
   .about .bottom-block {
