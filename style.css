@@ -36,13 +36,14 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  animation: 1s ease-out .5s 1 spin
+  animation: 1s ease-out 0.5s 1 spin;
 }
 
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -116,12 +117,12 @@ body {
   padding: 0 24px;
 }
 
-.social-media img {
-  transition: transform .5s;
+.social-media-img {
+  transition: transform 0.5s;
 }
 
-.social-media img:hover {
-  transform: scale(1.5)
+.social-media-img:hover {
+  transform: scale(1.5);
 }
 
 .headline ul {
@@ -595,10 +596,7 @@ body {
 
   .header a {
     color: #fff;
-    
   }
-
-  
 
   .hamburger {
     display: none;
@@ -613,22 +611,15 @@ body {
     font-size: 15px;
     line-height: 20px;
     gap: 20px;
-    
   }
 
   .links a {
-    
-    transition: color .5s;
-    
+    transition: color 0.5s;
   }
 
   .links a:hover {
     color: #f55800;
   }
-
-  
-
-  
 
   .headline {
     background-position: right;
@@ -685,7 +676,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     margin: 0 24px;
     gap: 24px;
     padding: 0;
@@ -721,21 +711,17 @@ body {
 
   .work .desktop-gym {
     display: block;
-    
     margin: 0 24px;
     width: 100%;
   }
 
   .work .right-block {
-    
     width: 100%;
-    
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    
   }
 
   .work .title {
@@ -845,9 +831,7 @@ body {
 
   .work .right-block {
     width: 80%;
-    
     padding: 0;
-    
   }
 
   .work .grid-container {
@@ -943,12 +927,11 @@ body {
   }
 
   .work .grid-item {
-    transition: transform .5s
+    transition: transform 0.5s;
   }
 
   .work .grid-item:hover {
     transform: translateY(-10px);
-    
   }
 
   .about .bottom-block {
