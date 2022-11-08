@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -62,6 +63,7 @@ body {
 }
 
 .links {
+  list-style: none;
   height: 0;
   overflow: hidden;
 }
@@ -393,7 +395,7 @@ body {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 42px;
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
