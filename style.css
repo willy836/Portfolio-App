@@ -71,7 +71,6 @@ body {
   background: #67798e;
   position: fixed;
   z-index: 1;
-  
 }
 
 .active .bar:nth-child(3) {
@@ -79,7 +78,6 @@ body {
   background: #67798e;
   position: fixed;
   z-index: 1;
-  
 }
 
 .links {
@@ -104,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .show-links a {
