@@ -104,7 +104,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
+  transition: all .5s;
 }
 
 .show-links a {
