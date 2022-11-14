@@ -184,12 +184,6 @@ body {
   padding: 120px 0;
 }
 
-.recent-work {
-  display: flex;
-  flex-direction: column;
-  padding: 0 24px;
-}
-
 .work-heading {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -200,6 +194,12 @@ body {
   text-transform: capitalize;
   margin-bottom: 24px;
   padding: 10px 0;
+}
+
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
 }
 
 .work-hr {

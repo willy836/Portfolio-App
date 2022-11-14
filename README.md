@@ -43,6 +43,7 @@ This project can be used to practice html5 and css3
 ## Author
 
 👤 **Wilson Kimiri**
+👤 **Shakerspear Samu**
 
 - GitHub: [@willy836](https://github.com/willy836)
 - Twitter: [@Kimiri836](https://twitter.com/Kimiri836)
