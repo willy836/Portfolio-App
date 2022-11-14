@@ -93,7 +93,7 @@ body {
   left: 0;
   top: 0;
   background: #3c3a39;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
