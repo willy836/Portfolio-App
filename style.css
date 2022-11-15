@@ -642,7 +642,6 @@ body {
   background: #fff;
   width: 90%;
   z-index: 1;
-  
 }
 
 .modal-content {
@@ -660,11 +659,10 @@ body {
 
 .modal-title {
   margin-top: 16px;
-  
 }
 
 .mobile-heading {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -689,7 +687,7 @@ body {
 }
 
 .modal-tags {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -736,7 +734,7 @@ body {
 }
 
 .modal-descM {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -762,7 +760,7 @@ body {
 }
 
 .modal .modal-btn {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -778,7 +776,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
   z-index: 1;
 }
@@ -1048,12 +1046,12 @@ body {
 
   .desktop-heading {
     display: block;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    color: #172B4D;
+    color: #172b4d;
     padding-bottom: 0;
   }
 
@@ -1071,7 +1069,6 @@ body {
 
   .modal-imgD {
     display: block;
-    
   }
 
   .modal-text {
@@ -1089,7 +1086,7 @@ body {
 
   .modal-descD {
     display: block;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1254,6 +1251,4 @@ body {
     margin-right: 142px;
     margin-left: 142px;
   }
-
-  
 }

@@ -25,8 +25,8 @@ const featuredData = [
     no accounts or sign-ups required. has been the industry's 
     standard dummy text ever since the 1500s, when an unknown 
     printer took a standard dummy text.`,
-    languages: ['css', 'html', 'bootstrap', 'ruby']
-  }
+    languages: ['css', 'html', 'bootstrap', 'ruby'],
+  },
 ];
 
 const firstCard = [
@@ -37,8 +37,8 @@ const firstCard = [
     deskTitle: 'professional art printing data',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
-  }
+    tags: ['html', 'bootstrap', 'ruby'],
+  },
 ];
 
 const cardData = [
@@ -49,7 +49,7 @@ const cardData = [
     deskTitle: 'data dashboard healthcare',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
+    tags: ['html', 'bootstrap', 'ruby'],
   },
   {
     mobileImg: 'images/work/card-image.png',
@@ -58,7 +58,7 @@ const cardData = [
     deskTitle: 'website portfolio',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
+    tags: ['html', 'bootstrap', 'ruby'],
   },
   {
     mobileImg: 'images/work/card-image.png',
@@ -67,7 +67,7 @@ const cardData = [
     deskTitle: 'professional art printing data more',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
+    tags: ['html', 'bootstrap', 'ruby'],
   },
   {
     mobileImg: 'images/work/card-image.png',
@@ -76,7 +76,7 @@ const cardData = [
     deskTitle: 'data dashboard healthcare',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
+    tags: ['html', 'bootstrap', 'ruby'],
   },
   {
     mobileImg: 'images/work/card-image.png',
@@ -85,24 +85,16 @@ const cardData = [
     deskTitle: 'website portfolio',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby']
-  }
+    tags: ['html', 'bootstrap', 'ruby'],
+  },
 ];
 
 const featuredWork = document.querySelector('.featured-work');
 const gridContainer = document.querySelector('.grid-container');
 
-window.addEventListener('DOMContentLoaded', ()=> {
-  displayFeaturedWork(featuredData);
-  displayCardOne(firstCard);
-  displayCardString(cardData);
-  modalPopup();
-});
-
 // Load featured-work
-const displayFeaturedWork = (array)=> {
-  const featuredWorkString = array.map((feature)=> {
-    return `<div class="mobile-gym"><img  src=${feature.mobileImg} alt="Gymfit image"></div>
+const displayFeaturedWork = (array) => {
+  const featuredWorkString = array.map((feature) => `<div class="mobile-gym"><img  src=${feature.mobileImg} alt="Gymfit image"></div>
     <div class="desktop-gym"><img  src=${feature.desktopImg} alt="Gymfit image"></div>
     <div class="right-block">
         <h2 class="title">${feature.title}</h2>
@@ -111,8 +103,8 @@ const displayFeaturedWork = (array)=> {
         </p>
         
         <ul class="langs">
-            ${feature.languages.map((lang)=> `<li class="lang"><a href="#">${lang}</a></li>`)
-            .join('')}
+            ${feature.languages.map((lang) => `<li class="lang"><a href="#">${lang}</a></li>`)
+    .join('')}
         </ul>
         
         <div class="btn-center">
@@ -120,16 +112,14 @@ const displayFeaturedWork = (array)=> {
                 see project
             </button>
         </div>
-    </div>`
-  })
-  .join('');
+    </div>`)
+    .join('');
   featuredWork.innerHTML = featuredWorkString;
-}
+};
 
-// Load first card 
-const displayCardOne = (array)=> {
-  const cardOne = array.map((card)=> {
-    return `<div class="grid-item">
+// Load first card
+const displayCardOne = (array) => {
+  const cardOne = array.map((card) => `<div class="grid-item">
     <div class="card-img">
         <img class="mob-img" src=${card.mobileImg} alt="Work card image">
         <img class="desk-img" src=${card.desktopImg} alt="Work card image">
@@ -147,8 +137,8 @@ const displayCardOne = (array)=> {
             </div>
             <div>
                 <ul class="tags">
-                    ${card.tags.map((tag)=> `<li class="lang"><a href="#">${tag}</a></li>`)
-                    .join('')}
+                    ${card.tags.map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
+    .join('')}
                 </ul>
             </div>
         </div>
@@ -158,16 +148,14 @@ const displayCardOne = (array)=> {
             </button>
         </div>
     </div>
-</div>`
-  })
-  .join('');
+</div>`)
+    .join('');
   gridContainer.innerHTML = cardOne;
-}
+};
 
 // Load the rest of the cards
-const displayCardString = (array)=> {
-  const cardString = array.map((card)=> {
-    return `<div class="grid-item">
+const displayCardString = (array) => {
+  const cardString = array.map((card) => `<div class="grid-item">
     <div class="card-img">
         <img class="mob-img" src=${card.mobileImg} alt="Work card image">
         <img class="desk-img" src=${card.desktopImg} alt="Work card image">
@@ -185,8 +173,8 @@ const displayCardString = (array)=> {
             </div>
             <div>
                 <ul class="tags">
-                    ${card.tags.map((tag)=> `<li class="lang"><a href="#">ruby</a></li>`)
-                    .join('')}
+                ${card.tags.map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
+    .join('')} 
                 </ul>
             </div>
         </div>
@@ -196,34 +184,40 @@ const displayCardString = (array)=> {
             </button>
         </div>
     </div>
-</div>`
-  })
-  .join('');
+</div>`)
+    .join('');
   gridContainer.innerHTML += cardString;
-}
+};
 
 // Popup window
-const modalPopup = ()=> {
+const modalPopup = () => {
   const projectBtns = document.querySelectorAll('.see-project');
   const containers = document.querySelectorAll('.container');
   const myModal = document.querySelector('.modal-overlay');
   const closeBtn = document.querySelector('.close-btn');
 
   // Show modal
-  projectBtns.forEach((btn)=> {
-    btn.addEventListener('click', ()=> {
+  projectBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
       myModal.classList.add('show-modal');
-      containers.forEach((container)=> {
+      containers.forEach((container) => {
         container.classList.add('blur');
       });
     });
   });
 
   // Close modal
-  closeBtn.addEventListener('click', ()=> {
+  closeBtn.addEventListener('click', () => {
     myModal.classList.remove('show-modal');
-    containers.forEach((container)=> {
+    containers.forEach((container) => {
       container.classList.remove('blur');
     });
   });
-}
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  displayFeaturedWork(featuredData);
+  displayCardOne(firstCard);
+  displayCardString(cardData);
+  modalPopup();
+});
