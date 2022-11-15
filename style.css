@@ -735,7 +735,7 @@ body {
   margin-top: 24px;
 }
 
-.modaldescM {
+.modal-descM {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -778,6 +778,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, .3);
   pointer-events: none;
   z-index: 1;
 }
