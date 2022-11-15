@@ -96,8 +96,10 @@ window.addEventListener('DOMContentLoaded', ()=> {
   displayFeaturedWork(featuredData);
   displayCardOne(firstCard);
   displayCardString(cardData);
+  modalPopup();
 });
 
+// Load featured-work
 const displayFeaturedWork = (array)=> {
   const featuredWorkString = array.map((feature)=> {
     return `<div class="mobile-gym"><img  src=${feature.mobileImg} alt="Gymfit image"></div>
@@ -124,6 +126,7 @@ const displayFeaturedWork = (array)=> {
   featuredWork.innerHTML = featuredWorkString;
 }
 
+// Load first card 
 const displayCardOne = (array)=> {
   const cardOne = array.map((card)=> {
     return `<div class="grid-item">
@@ -161,6 +164,7 @@ const displayCardOne = (array)=> {
   gridContainer.innerHTML = cardOne;
 }
 
+// Load the rest of the cards
 const displayCardString = (array)=> {
   const cardString = array.map((card)=> {
     return `<div class="grid-item">
@@ -196,4 +200,30 @@ const displayCardString = (array)=> {
   })
   .join('');
   gridContainer.innerHTML += cardString;
+}
+
+// Popup window
+const modalPopup = ()=> {
+  const projectBtns = document.querySelectorAll('.see-project');
+  const containers = document.querySelectorAll('.container');
+  const myModal = document.querySelector('.modal-overlay');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show modal
+  projectBtns.forEach((btn)=> {
+    btn.addEventListener('click', ()=> {
+      myModal.classList.add('show-modal');
+      containers.forEach((container)=> {
+        container.classList.add('blur');
+      });
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener('click', ()=> {
+    myModal.classList.remove('show-modal');
+    containers.forEach((container)=> {
+      container.classList.remove('blur');
+    });
+  });
 }

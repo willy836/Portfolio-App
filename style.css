@@ -632,6 +632,165 @@ body {
   gap: 20px;
 }
 
+/* ---------------- POPUP WINDOW STYLES ---------------- */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 90%;
+  z-index: 1;
+  
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 15px;
+}
+
+.modal-title {
+  margin-top: 16px;
+  
+}
+
+.mobile-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding-bottom: 30px;
+}
+
+.desktop-heading {
+  display: none;
+}
+
+.close-btn {
+  float: right;
+  border: none;
+  outline: none;
+  background: none;
+  color: #67798e;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-tags {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.modal ul {
+  display: flex;
+  gap: 8px;
+}
+
+.modal a {
+  color: #3c3a39;
+}
+
+.modal-tag {
+  width: fit-content;
+  padding: 10px 12px;
+  border: 1px solid #979493;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.modal-imgD {
+  display: none;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.modaldescM {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-descD {
+  display: none;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal button {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+}
+
+.modal .modal-btn {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.show-modal {
+  pointer-events: all;
+  display: block;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
 /* ----------------------DESKTOP VERSION STYLES----------------------- */
 
 @media screen and (min-width: 768px) {
@@ -860,6 +1019,96 @@ body {
     margin-left: 135px;
     margin-right: 142px;
   }
+
+  /* -------------------MODAL CSS STYLES ------------------------ */
+
+  .modal {
+    width: 80%;
+  }
+
+  .modal-content {
+    gap: 40px;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 24px;
+  }
+
+  .modal-title {
+    margin-top: 24px;
+  }
+
+  .mobile-heading {
+    display: none;
+  }
+
+  .desktop-heading {
+    display: block;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D;
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 27px;
+  }
+
+  .modal-imgM {
+    display: none;
+  }
+
+  .modal-imgD {
+    display: block;
+    
+  }
+
+  .modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 24px;
+    width: 50%;
+  }
+
+  .modal-descM {
+    display: none;
+  }
+
+  .modal-descD {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-btns {
+    display: flex;
+    justify-content: start;
+    gap: 7px;
+  }
+
+  .modal button {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #ff6b00;
+    border: none;
+  }
 }
 
 @media screen and (min-width: 852px) {
@@ -1004,4 +1253,6 @@ body {
     margin-right: 142px;
     margin-left: 142px;
   }
+
+  
 }
