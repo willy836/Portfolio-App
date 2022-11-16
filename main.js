@@ -228,19 +228,19 @@ const email = document.getElementById('email');
 const span = document.querySelector('.span');
 
 // Function that validates email address
-const validMail = (usermail)=> {
-  if (usermail.match(/^([a-z0-9\.-]+)+@([a-z0-9-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/)) {
+const validMail = (usermail) => {
+  if (usermail.match(/^([a-z0-9.-]+)+@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/)) {
     return true;
   }
   return false;
-}
+};
 
 // Event listener for email validation
-form.addEventListener('submit', (e)=> {
-  if(!validMail(email.value)) {
+form.addEventListener('submit', (e) => {
+  if (!validMail(email.value)) {
     e.preventDefault();
-    span.textContent = "Please enter a valid email";
+    span.textContent = 'Please enter a valid email';
   } else {
     span.textContent = '';
   }
-})
+});
