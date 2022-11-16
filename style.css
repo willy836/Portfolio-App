@@ -632,6 +632,14 @@ body {
   gap: 20px;
 }
 
+.contact .span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ff004f;
+}
+
 /* ---------------- POPUP WINDOW STYLES ---------------- */
 
 .modal {
