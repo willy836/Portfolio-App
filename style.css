@@ -637,7 +637,9 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
+  line-height: 30px;
   color: #ff004f;
+  display: block;
 }
 
 /* ---------------- POPUP WINDOW STYLES ---------------- */
@@ -1025,6 +1027,10 @@ body {
     padding: 130px 0;
     margin-left: 135px;
     margin-right: 142px;
+  }
+
+  .contact .span {
+    display: inline-block;
   }
 
   /* -------------------MODAL CSS STYLES ------------------------ */
