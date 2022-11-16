@@ -359,21 +359,22 @@
                 </p>
             </div>
             <div class="contact-form">
-                <form action="https://formspree.io/f/mjvzkdov" method="post">
+                <form action="https://formspree.io/f/mjvzkdov" method="post" id="form">
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" name="name" maxlength="30" placeholder="Full name" required>
+                        <input type="text" name="name" maxlength="30" placeholder="Full name" id="name" required>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Email address" required>
+                        <input type="email" name="email" placeholder="Email address" id="email" required>
                     </div>
                     <div>
                         <label for="message">Message</label>
-                        <textarea name="message" maxlength="500" placeholder="Enter text here" required></textarea>
+                        <textarea name="message" maxlength="500" placeholder="Enter text here" id="message" required></textarea>
                     </div>
                     <div class="contact-button">
                         <button type="submit" class="contact-btn ">Get in touch</button>
+                        <span class="span"></span>
                     </div>
                 </form>
             </div>
