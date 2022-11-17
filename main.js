@@ -250,10 +250,10 @@ form.addEventListener('submit', (e) => {
 // LOCAL STORAGE
 
 // Retrieve from localStorage
-window.addEventListener('DOMContentLoaded', ()=> {
+window.addEventListener('DOMContentLoaded', () => {
   const userInput = JSON.parse(localStorage.getItem('data'));
-console.log(userInput)
-  if(userInput !== null) {
+
+  if (userInput !== null) {
     userName.value = userInput.nameID;
     email.value = userInput.mail;
     message.value = userInput.msg;
@@ -265,8 +265,8 @@ console.log(userInput)
 });
 
 // Add to localStorage
-form.addEventListener('input', ()=> {
-  let object = {};
+form.addEventListener('input', () => {
+  const object = {};
   object.nameID = userName.value;
   object.mail = email.value;
   object.msg = message.value;
