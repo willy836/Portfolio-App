@@ -226,6 +226,8 @@ window.addEventListener('DOMContentLoaded', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const span = document.querySelector('.span');
+const userName = document.getElementById('name');
+const message = document.getElementById('message');
 
 // Function that validates email address
 const validMail = (usermail) => {
@@ -243,4 +245,31 @@ form.addEventListener('submit', (e) => {
   } else {
     span.textContent = '';
   }
+});
+
+// LOCAL STORAGE
+
+// Retrieve from localStorage
+window.addEventListener('DOMContentLoaded', ()=> {
+  const userInput = JSON.parse(localStorage.getItem('data'));
+console.log(userInput)
+  if(userInput !== null) {
+    userName.value = userInput.nameID;
+    email.value = userInput.mail;
+    message.value = userInput.msg;
+  } else {
+    userName.value = '';
+    email.value = '';
+    message.value = '';
+  }
+});
+
+// Add to localStorage
+form.addEventListener('input', ()=> {
+  let object = {};
+  object.nameID = userName.value;
+  object.mail = email.value;
+  object.msg = message.value;
+
+  localStorage.setItem('data', JSON.stringify(object));
 });
