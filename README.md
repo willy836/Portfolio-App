@@ -2,13 +2,14 @@
 
 # Portfolio Application
 
-> This is a Portfolio Website built with HTML and CSS
+> This is a Portfolio Website built with HTML5, CSS3 and JavaScript
 
 
 ## Built With
 
-- HTML
-- CSS
+- HTML5
+- CSS3
+- JavaScript
 
 ## Live Demo 
 
@@ -38,12 +39,14 @@ To install this application, install npm packages and node.js:
     -follow steps to install node.js
 
 ### Usage
-This project can be used to practice html5 and css3
+This project can be used to practice html5, css3, and javascript
 
 ## Author
 
 👤 **Wilson Kimiri**
 👤 **Shakerspear Samu**
+
+I have worked with Shakespear on this starting with JavaScript Dom and all the form validations using JavaScript
 
 - GitHub: [@willy836](https://github.com/willy836)
 - Twitter: [@Kimiri836](https://twitter.com/Kimiri836)
