@@ -46,6 +46,8 @@ This project can be used to practice html5, css3, and javascript
 👤 **Wilson Kimiri**
 👤 **Shakerspear Samu**
 
+I have worked with Shakespear on this starting with JavaScript Dom and all the form validations using JavaScript
+
 - GitHub: [@willy836](https://github.com/willy836)
 - Twitter: [@Kimiri836](https://twitter.com/Kimiri836)
 - LinkedIn: [Wilson Kimiri](https://www.linkedin.com/in/wilson-kimiri-420396235/)
