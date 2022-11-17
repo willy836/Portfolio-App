@@ -80,6 +80,12 @@ body {
   z-index: 1;
 }
 
+.links {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+}
+
 .show-links {
   height: 100vh;
   width: 100%;
@@ -97,12 +103,6 @@ body {
   flex-direction: column;
   gap: 20px;
   transition: all 0.5s;
-}
-
-.links {
-  list-style: none;
-  height: 0;
-  overflow: hidden;
 }
 
 .show-links a {
@@ -184,6 +184,12 @@ body {
   padding: 120px 0;
 }
 
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
 .work-heading {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -194,12 +200,6 @@ body {
   text-transform: capitalize;
   margin-bottom: 24px;
   padding: 10px 0;
-}
-
-.recent-work {
-  display: flex;
-  flex-direction: column;
-  padding: 0 24px;
 }
 
 .work-hr {
