@@ -222,9 +222,9 @@ window.addEventListener('DOMContentLoaded', () => {
   modalPopup();
 });
 
-// FORM VALIDATION
-const form = document.getElementById('form');
-const email = document.getElementById('email');
+// FORM VALIDATION//
+const form = document.querySelector('.form');
+const email = document.querySelector('.email');
 const span = document.querySelector('.span');
 const userName = document.getElementById('name');
 const message = document.getElementById('message');
