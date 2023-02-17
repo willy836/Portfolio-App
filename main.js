@@ -29,7 +29,7 @@ const featuredData = [
   },
 ];
 
-const firstCard = [
+const cardData = [
   {
     id: '1',
     mobileImg: 'images/work/desk-card-images/project1.jpg',
@@ -37,8 +37,8 @@ const firstCard = [
     popupImg: 'images/work/desk-card-images/awesome-pop.jpg',
     mobileTitle: 'Awesome Books',
     deskTitle: 'Awesome Books',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
+    desc: `Awesome books is a simple website that displays a list 
+    of books and allows a user to add and remove books from that list`,
     popupDesc: `Awesome books is a simple website that displays a list 
     of books and allows a user to add and remove books from that list`,
     tags: ['html', 'css', 'javascript'],
@@ -46,9 +46,6 @@ const firstCard = [
     seeLive: 'https://willy836.github.io/Awesome-Books/',
     seeSource: 'https://github.com/willy836/Awesome-Books',
   },
-];
-
-const cardData = [
   {
     id: '2',
     mobileImg: 'images/work/desk-card-images/project2.jpg',
@@ -56,8 +53,8 @@ const cardData = [
     popupImg: 'images/work/desk-card-images/todo-pop.jpg',
     mobileTitle: 'To Do List',
     deskTitle: 'To Do List',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
+    desc: `An app that helps users to organize their day. It lists the 
+    things that need to be done and allows users to mark them as complete`,
     popupDesc: `This is an app that allow users to add a list of tasks 
     that they plan to complete. Once the tasks have been completed, 
     the user can mark them as complete and remove them from the list. Built with JavaScript.`,
@@ -68,30 +65,30 @@ const cardData = [
   },
   {
     id: '3',
-    mobileImg: 'images/work/desk-card-images/project3.jpg',
-    desktopImg: 'images/work/desk-card-images/project3.jpg',
+    mobileImg: 'images/work/desk-card-images/leaderboard.jpg',
+    desktopImg: 'images/work/desk-card-images/leaderboard.jpg',
     popupImg: 'images/work/desk-card-images/leaderboard-pop.jpg',
     mobileTitle: 'Leaderboard',
     deskTitle: 'Leaderboard',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
+    desc: `The Leaderboard app displays scores submitted by different players. 
+    It also allows users to submit their score`,
     popupDesc: `This app allows a user to submit their score. It also shows 
     scores previously submitted by other players. All data is preserved by 
     the external leaderboard API service`,
     tags: ['html', 'css', 'javascript'],
-    popTech: ['JavaScript', 'CSS', 'HTML'],
+    popTech: ['API', 'JavaScript', 'CSS', 'HTML'],
     seeLive: 'https://willy836.github.io/Leaderboard/',
     seeSource: 'https://github.com/willy836/Leaderboard',
   },
   {
     id: '4',
-    mobileImg: 'images/work/desk-card-images/math-magicians.jpg',
-    desktopImg: 'images/work/desk-card-images/math-magicians.jpg',
+    mobileImg: 'images/work/desk-card-images/calc.jpg',
+    desktopImg: 'images/work/desk-card-images/calc.jpg',
     popupImg: 'images/work/desk-card-images/math-pop.jpg',
     mobileTitle: 'Math magicians',
     deskTitle: 'Math magicians',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
+    desc: `This is a Single Page App (SPA) that allows users to: - Make simple 
+    calculations - Read a random math-related quote`,
     popupDesc: `Math Magicians is an app for all fans of mathematics. 
     It is a Single Page App (SPA) that allows users to: - Make simple 
     calculations - Read a random math-related quote`,
@@ -107,12 +104,11 @@ const cardData = [
     popupImg: 'images/work/desk-card-images/bookstore-pop.jpg',
     mobileTitle: 'Bookstore',
     deskTitle: 'Bookstore',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
-    popupDesc:
-      'This is an app that allows a user to add a book, display a list of books, and remove a selected book',
+    desc: 'This is an app that allows a user to add a book, display a list of books, and remove a selected book',
+    popupDesc: `This is an app that allows a user to add a book, display a list of books, and remove a selected book. 
+      All data is preserved by the external Bookstore API service`,
     tags: ['react', 'redux', 'javascript'],
-    popTech: ['React', 'Redux', 'JavaScript'],
+    popTech: ['API', 'React', 'Redux', 'JavaScript'],
     seeLive: 'https://bookstore-app-willy836.netlify.app/',
     seeSource: 'https://github.com/willy836/Bookstore',
   },
@@ -123,12 +119,12 @@ const cardData = [
     popupImg: 'images/work/desk-card-images/metrics-pop.jpg',
     mobileTitle: 'Metrics web App',
     deskTitle: 'Metrics web App',
-    desc: `A daily selection of privately personalized reads; 
-    no accounts or sign-ups required. has been the industry's standard`,
-    popupDesc: `This is a web app that allows users to see and 
-    compare metrics from different companies. Companies data is provided by Finacial Modelling Prep API.`,
+    desc: `This is a web app that allows users to see and 
+    compare metrics from different companies. Companies data is provided by Finacial Modelling Prep API`,
+    popupDesc: `This is a web(mobile-focused) app that allows users to see and 
+    compare live metrics from different companies. Companies data is provided by Finacial Modelling Prep API.`,
     tags: ['react', 'redux', 'javascript'],
-    popTech: ['React', 'Redux', 'JavaScript'],
+    popTech: ['API', 'React', 'Redux', 'JavaScript'],
     seeLive: 'https://react-capstone-willy836.netlify.app/',
     seeSource: 'https://github.com/willy836/React-Capstone',
   },
@@ -170,49 +166,7 @@ const displayFeaturedWork = (array) => {
   featuredWork.innerHTML = featuredWorkString;
 };
 
-// Load first card
-const displayCardOne = (array) => {
-  const cardOne = array
-    .map(
-      (card) => `<div class="grid-item">
-    <div class="card-img">
-        <img class="mob-img" src=${card.mobileImg} alt="Work card image">
-        <img class="desk-img" src=${card.desktopImg} alt="Work card image">
-    </div>
-    <div class="card-content">
-        <div class="card-text hide-text">
-            <div class="card-title">
-                <p class="mobile-para">${card.mobileTitle}</p>
-                <p class="desktop-para">${card.deskTitle}</p>
-            </div>
-            <div class="card-desc">
-                <p>
-                    ${card.desc}
-                </p>
-            </div>
-            <div>
-                <ul class="tags">
-                    ${card.tags
-    .map(
-      (tag) => `<li class="lang"><a href="#">${tag}</a></li>`,
-    )
-    .join('')}
-                </ul>
-            </div>
-        </div>
-        <div>
-            <button class="card-btn see-project button" data-id=${card.id} >
-                see project
-            </button>
-        </div>
-    </div>
-</div>`,
-    )
-    .join('');
-  gridContainer.innerHTML = cardOne;
-};
-
-// Load the rest of the cards
+// Load work section cards
 const displayCardString = (array) => {
   const cardString = array
     .map(
@@ -249,7 +203,7 @@ const displayCardString = (array) => {
 </div>`,
     )
     .join('');
-  gridContainer.innerHTML += cardString;
+  gridContainer.innerHTML = cardString;
 };
 
 // Popup window
@@ -309,9 +263,7 @@ const modalPopup = () => {
             </div>
             <div class="modal-text">
               <p class="modal-descM">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the
+                ${item.popupDesc}
               </p>
               <p class="modal-descD">
                 ${item.popupDesc}
@@ -366,7 +318,6 @@ const modalPopup = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   displayFeaturedWork(featuredData);
-  displayCardOne(firstCard);
   displayCardString(cardData);
   modalPopup();
 });
