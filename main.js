@@ -31,61 +31,106 @@ const featuredData = [
 
 const firstCard = [
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg1.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'professional art printing data',
+    id: '1',
+    mobileImg: 'images/work/desk-card-images/project1.jpg',
+    desktopImg: 'images/work/desk-card-images/project1.jpg',
+    popupImg: 'images/work/desk-card-images/awesome-pop.jpg',
+    mobileTitle: 'Awesome Books',
+    deskTitle: 'Awesome Books',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc: `Awesome books is a simple website that displays a list 
+    of books and allows a user to add and remove books from that list`,
+    tags: ['html', 'css', 'javascript'],
+    popTech: ['JavaScript', 'CSS', 'HTML'],
+    seeLive: 'https://willy836.github.io/Awesome-Books/',
+    seeSource: 'https://github.com/willy836/Awesome-Books',
   },
 ];
 
 const cardData = [
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg2.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'data dashboard healthcare',
+    id: '2',
+    mobileImg: 'images/work/desk-card-images/project2.jpg',
+    desktopImg: 'images/work/desk-card-images/project2.jpg',
+    popupImg: 'images/work/desk-card-images/todo-pop.jpg',
+    mobileTitle: 'To Do List',
+    deskTitle: 'To Do List',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc: `This is an app that allow users to add a list of tasks 
+    that they plan to complete. Once the tasks have been completed, 
+    the user can mark them as complete and remove them from the list. Built with JavaScript.`,
+    tags: ['html', 'css', 'javascript'],
+    popTech: ['JavaScript', 'CSS', 'HTML'],
+    seeLive: 'https://willy836.github.io/To-Do-List/',
+    seeSource: 'https://github.com/willy836/To-Do-List',
   },
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg3.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'website portfolio',
+    id: '3',
+    mobileImg: 'images/work/desk-card-images/project3.jpg',
+    desktopImg: 'images/work/desk-card-images/project3.jpg',
+    popupImg: 'images/work/desk-card-images/leaderboard-pop.jpg',
+    mobileTitle: 'Leaderboard',
+    deskTitle: 'Leaderboard',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc: `This app allows a user to submit their score. It also shows 
+    scores previously submitted by other players. All data is preserved by 
+    the external leaderboard API service`,
+    tags: ['html', 'css', 'javascript'],
+    popTech: ['JavaScript', 'CSS', 'HTML'],
+    seeLive: 'https://willy836.github.io/Leaderboard/',
+    seeSource: 'https://github.com/willy836/Leaderboard',
   },
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg4.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'professional art printing data more',
+    id: '4',
+    mobileImg: 'images/work/desk-card-images/math-magicians.jpg',
+    desktopImg: 'images/work/desk-card-images/math-magicians.jpg',
+    popupImg: 'images/work/desk-card-images/math-pop.jpg',
+    mobileTitle: 'Math magicians',
+    deskTitle: 'Math magicians',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc: `Math Magicians is an app for all fans of mathematics. 
+    It is a Single Page App (SPA) that allows users to: - Make simple 
+    calculations - Read a random math-related quote`,
+    tags: ['react', 'javascript', 'css'],
+    popTech: ['React', 'JavaScript'],
+    seeLive: 'https://math-magicians-tfgn.onrender.com/Calculator',
+    seeSource: 'https://github.com/willy836/Math-Magicians',
   },
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg5.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'data dashboard healthcare',
+    id: '5',
+    mobileImg: 'images/work/desk-card-images/bookstore.jpg',
+    desktopImg: 'images/work/desk-card-images/bookstore.jpg',
+    popupImg: 'images/work/desk-card-images/bookstore-pop.jpg',
+    mobileTitle: 'Bookstore',
+    deskTitle: 'Bookstore',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc:
+      'This is an app that allows a user to add a book, display a list of books, and remove a selected book',
+    tags: ['react', 'redux', 'javascript'],
+    popTech: ['React', 'Redux', 'JavaScript'],
+    seeLive: 'https://bookstore-app-willy836.netlify.app/',
+    seeSource: 'https://github.com/willy836/Bookstore',
   },
   {
-    mobileImg: 'images/work/card-image.png',
-    desktopImg: 'images/work/desk-card-images/cardImg6.png',
-    mobileTitle: 'professional art printing data',
-    deskTitle: 'website portfolio',
+    id: '6',
+    mobileImg: 'images/work/desk-card-images/metrics-app.jpg',
+    desktopImg: 'images/work/desk-card-images/metrics-app.jpg',
+    popupImg: 'images/work/desk-card-images/metrics-pop.jpg',
+    mobileTitle: 'Metrics web App',
+    deskTitle: 'Metrics web App',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'ruby'],
+    popupDesc: `This is a web app that allows users to see and 
+    compare metrics from different companies. Companies data is provided by Finacial Modelling Prep API.`,
+    tags: ['react', 'redux', 'javascript'],
+    popTech: ['React', 'Redux', 'JavaScript'],
+    seeLive: 'https://react-capstone-willy836.netlify.app/',
+    seeSource: 'https://github.com/willy836/React-Capstone',
   },
 ];
 
@@ -94,8 +139,14 @@ const gridContainer = document.querySelector('.grid-container');
 
 // Load featured-work
 const displayFeaturedWork = (array) => {
-  const featuredWorkString = array.map((feature) => `<div class="mobile-gym"><img  src=${feature.mobileImg} alt="Gymfit image"></div>
-    <div class="desktop-gym"><img  src=${feature.desktopImg} alt="Gymfit image"></div>
+  const featuredWorkString = array
+    .map(
+      (feature) => `<div class="mobile-gym"><img  src=${
+        feature.mobileImg
+      } alt="Gymfit image"></div>
+    <div class="desktop-gym"><img  src=${
+  feature.desktopImg
+} alt="Gymfit image"></div>
     <div class="right-block">
         <h2 class="title">${feature.title}</h2>
         <p class="para">
@@ -103,7 +154,8 @@ const displayFeaturedWork = (array) => {
         </p>
         
         <ul class="langs">
-            ${feature.languages.map((lang) => `<li class="lang"><a href="#">${lang}</a></li>`)
+            ${feature.languages
+    .map((lang) => `<li class="lang"><a href="#">${lang}</a></li>`)
     .join('')}
         </ul>
         
@@ -112,14 +164,17 @@ const displayFeaturedWork = (array) => {
                 see project
             </button>
         </div>
-    </div>`)
+    </div>`,
+    )
     .join('');
   featuredWork.innerHTML = featuredWorkString;
 };
 
 // Load first card
 const displayCardOne = (array) => {
-  const cardOne = array.map((card) => `<div class="grid-item">
+  const cardOne = array
+    .map(
+      (card) => `<div class="grid-item">
     <div class="card-img">
         <img class="mob-img" src=${card.mobileImg} alt="Work card image">
         <img class="desk-img" src=${card.desktopImg} alt="Work card image">
@@ -137,25 +192,31 @@ const displayCardOne = (array) => {
             </div>
             <div>
                 <ul class="tags">
-                    ${card.tags.map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
+                    ${card.tags
+    .map(
+      (tag) => `<li class="lang"><a href="#">${tag}</a></li>`,
+    )
     .join('')}
                 </ul>
             </div>
         </div>
         <div>
-            <button class="card-btn see-project button" >
+            <button class="card-btn see-project button" data-id=${card.id} >
                 see project
             </button>
         </div>
     </div>
-</div>`)
+</div>`,
+    )
     .join('');
   gridContainer.innerHTML = cardOne;
 };
 
 // Load the rest of the cards
 const displayCardString = (array) => {
-  const cardString = array.map((card) => `<div class="grid-item">
+  const cardString = array
+    .map(
+      (card) => `<div class="grid-item">
     <div class="card-img">
         <img class="mob-img" src=${card.mobileImg} alt="Work card image">
         <img class="desk-img" src=${card.desktopImg} alt="Work card image">
@@ -173,18 +234,20 @@ const displayCardString = (array) => {
             </div>
             <div>
                 <ul class="tags">
-                ${card.tags.map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
+                ${card.tags
+    .map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
     .join('')} 
                 </ul>
             </div>
         </div>
         <div>
-            <button class="card-btn see-project button hide-btn" >
+            <button class="card-btn see-project button " data-id=${card.id} >
                 see project
             </button>
         </div>
     </div>
-</div>`)
+</div>`,
+    )
     .join('');
   gridContainer.innerHTML += cardString;
 };
@@ -194,23 +257,109 @@ const modalPopup = () => {
   const projectBtns = document.querySelectorAll('.see-project');
   const containers = document.querySelectorAll('.container');
   const myModal = document.querySelector('.modal-overlay');
-  const closeBtn = document.querySelector('.close-btn');
 
   // Show modal
   projectBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      const projID = e.target.dataset.id;
+
+      const targetProj = cardData.filter((proj) => {
+        if (proj.id === projID) {
+          return proj;
+        }
+        return false;
+      });
+      const displayProject = targetProj
+        .map(
+          (item) => `<div class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <span class="close-btn">&times;</span>
+              <p class="mobile-heading">${item.mobileTitle}</p>
+              <p class="desktop-heading">
+                ${item.deskTitle}
+              </p>
+            </div>
+            <div class="modal-tags">
+              <ul>
+                
+                ${item.popTech
+    .map(
+      (tech) => `<li class="modal-tag"><a href="">${tech}</a></li>`,
+    )
+    .join('')}
+              </ul>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-imgM">
+              <img
+                class="modal-image"
+                src=${item.popupImg}
+                alt="Modal mobile image"
+              />
+            </div>
+            <div class="modal-imgD">
+              <img
+                class="modal-image"
+                src=${item.popupImg}
+                alt="Modal desktop image"
+              />
+            </div>
+            <div class="modal-text">
+              <p class="modal-descM">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the
+              </p>
+              <p class="modal-descD">
+                ${item.popupDesc}
+                
+              </p>
+              <div class="modal-btns">
+                <button>
+                  <a class="modal-btn" href=${
+  item.seeLive
+} target="_blank">See Live</a>
+                  <img
+                    class="modal-btn-img"
+                    src="images/modal/live-icon.png"
+                    alt="See Live Image"
+                  />
+                </button>
+                <button>
+                  <a class="modal-btn" href=${
+  item.seeSource
+} target="_blank">See Source</a>
+                  <img
+                    class="modal-btn-img"
+                    src="images/modal/github-icon.png"
+                    alt="See Source Github Image"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`,
+        )
+        .join('');
+      myModal.innerHTML = displayProject;
+
       myModal.classList.add('show-modal');
       containers.forEach((container) => {
         container.classList.add('blur');
       });
-    });
-  });
 
-  // Close modal
-  closeBtn.addEventListener('click', () => {
-    myModal.classList.remove('show-modal');
-    containers.forEach((container) => {
-      container.classList.remove('blur');
+      // Close modal
+      const closeBtn = document.querySelector('.close-btn');
+      closeBtn.addEventListener('click', () => {
+        myModal.classList.remove('show-modal');
+        containers.forEach((container) => {
+          container.classList.remove('blur');
+        });
+      });
     });
   });
 };
@@ -231,7 +380,9 @@ const message = document.getElementById('message');
 
 // Function that validates email address
 const validMail = (usermail) => {
-  if (usermail.match(/^([a-z0-9.-]+)+@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/)) {
+  if (
+    usermail.match(/^([a-z0-9.-]+)+@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/)
+  ) {
     return true;
   }
   return false;
