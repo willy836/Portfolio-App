@@ -18,14 +18,25 @@ link.forEach((linkItem) => {
 // Display work section dynamically
 const featuredData = [
   {
+    id: "7",
     mobileImg: "images/work/sleekdine-mob.png",
     desktopImg: "images/work/sleekdine-desk.png",
+    popupImg: "images/work/sleekdine-desk.png",
+    mobileTitle: "Restaurant Table Reservation",
+    deskTitle: "Restaurant Table Reservation",
     title: "Restaurant Table Reservation",
     desc: `A full-stack app that allows users to log 
     in, browse, reserve, and manage table reservations, 
     enhancing their dining experience. The app utilizes 
     a Rails API to provide data.`,
+    popupDesc: `A full-stack app that allows users to log 
+    in, browse, reserve, and manage table reservations, 
+    enhancing their dining experience. The app utilizes 
+    a Rails API to provide data.`,
     languages: ["react", "redux", "javascript", "rails"],
+    popTech: ["Rails", "React", "Redux"],
+    seeLive: "https://book-reservation-h17l.onrender.com/",
+    seeSource: "https://github.com/george827/Book-reservation-Front_End",
   },
 ];
 
@@ -156,7 +167,7 @@ const displayFeaturedWork = (array) => {
         </ul>
         
         <div class="btn-center">
-            <button class="btn see-project button" >
+            <button class="btn  button see-featured" data-id=${feature.id} >
                 see project
             </button>
         </div>
@@ -204,6 +215,113 @@ const displayCardString = (array) => {
     )
     .join("");
   gridContainer.innerHTML = cardString;
+};
+
+// Featured popoup
+const featuredModal = () => {
+  const seeProjectBtn = document.querySelector(".see-featured");
+  const containers = document.querySelectorAll(".container");
+  const myModal = document.querySelector(".modal-overlay");
+
+  seeProjectBtn.addEventListener("click", (e) => {
+    const featuredId = e.target.dataset.id;
+
+    const targetProj = featuredData.filter((proj) => {
+      if (proj.id === featuredId) {
+        return proj;
+      }
+      return false;
+    });
+    const displayFeatured = targetProj
+      .map((item) => {
+        return `<div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <span class="close-btn">&times;</span>
+            <p class="mobile-heading">${item.mobileTitle}</p>
+            <p class="desktop-heading">
+              ${item.deskTitle}
+            </p>
+          </div>
+          <div class="modal-tags">
+            <ul>
+              
+              ${item.popTech
+                .map(
+                  (tech) => `<li class="modal-tag"><a href="">${tech}</a></li>`
+                )
+                .join("")}
+            </ul>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-imgM">
+            <img
+              class="modal-image"
+              src=${item.popupImg}
+              alt="Modal mobile image"
+            />
+          </div>
+          <div class="modal-imgD">
+            <img
+              class="modal-image"
+              src=${item.popupImg}
+              alt="Modal desktop image"
+            />
+          </div>
+          <div class="modal-text">
+            <p class="modal-descM">
+              ${item.popupDesc}
+            </p>
+            <p class="modal-descD">
+              ${item.popupDesc}
+              
+            </p>
+            <div class="modal-btns">
+              <button>
+                <a class="modal-btn" href=${
+                  item.seeLive
+                } target="_blank">See Live</a>
+                <img
+                  class="modal-btn-img"
+                  src="images/modal/live-icon.png"
+                  alt="See Live Image"
+                />
+              </button>
+              <button>
+                <a class="modal-btn" href=${
+                  item.seeSource
+                } target="_blank">See Source</a>
+                <img
+                  class="modal-btn-img"
+                  src="images/modal/github-icon.png"
+                  alt="See Source Github Image"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+      })
+      .join("");
+
+    myModal.innerHTML = displayFeatured;
+    myModal.classList.add("show-modal");
+    containers.forEach((container) => {
+      container.classList.add("blur");
+    });
+
+    // Close modal
+    const closeBtn = document.querySelector(".close-btn");
+    closeBtn.addEventListener("click", () => {
+      myModal.classList.remove("show-modal");
+      containers.forEach((container) => {
+        container.classList.remove("blur");
+      });
+    });
+  });
 };
 
 // Popup window
@@ -321,6 +439,7 @@ window.addEventListener("DOMContentLoaded", () => {
   displayFeaturedWork(featuredData);
   displayCardString(cardData);
   modalPopup();
+  featuredModal();
 });
 
 // FORM VALIDATION//
