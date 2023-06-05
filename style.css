@@ -742,6 +742,10 @@ body {
   height: auto;
 }
 
+.feature-modal-img {
+  border: 4px solid #f55800;
+}
+
 .modal-text {
   display: flex;
   flex-direction: column;

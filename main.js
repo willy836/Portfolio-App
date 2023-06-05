@@ -34,7 +34,7 @@ const featuredData = [
     enhancing their dining experience. The app utilizes 
     a Rails API to provide data.`,
     languages: ["react", "redux", "javascript", "rails"],
-    popTech: ["Rails", "React", "Redux"],
+    popTech: ["Rails", "React", "Redux", "JavaScript"],
     seeLive: "https://book-reservation-h17l.onrender.com/",
     seeSource: "https://github.com/george827/Book-reservation-Front_End",
   },
@@ -258,14 +258,14 @@ const featuredModal = () => {
         <div class="modal-body">
           <div class="modal-imgM">
             <img
-              class="modal-image"
+              class="modal-image feature-modal-img"
               src=${item.popupImg}
               alt="Modal mobile image"
             />
           </div>
           <div class="modal-imgD">
             <img
-              class="modal-image"
+              class="modal-image feature-modal-img"
               src=${item.popupImg}
               alt="Modal desktop image"
             />
