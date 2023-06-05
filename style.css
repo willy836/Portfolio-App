@@ -28,6 +28,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .logo {
@@ -147,6 +156,31 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  letter-spacing: 0.18em;
+  animation: typing 6s steps(60, end) infinite alternate,
+    blink-caret 0.75s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .description {
@@ -815,6 +849,7 @@ body {
 @media screen and (min-width: 768px) {
   .header {
     padding: 26px 150px;
+    /* position: relative; */
   }
 
   .header a {
