@@ -25,13 +25,13 @@ const featuredData = [
     mobileTitle: "Restaurant Table Reservation",
     deskTitle: "Restaurant Table Reservation",
     title: "Restaurant Table Reservation",
-    desc: `A full-stack app that allows users to log 
-    in, browse, reserve, and manage table reservations, 
-    enhancing their dining experience. The app utilizes 
+    desc: `A full-stack app that allows users to log
+    in, browse, reserve, and manage table reservations,
+    enhancing their dining experience. The app utilizes
     a Rails API to provide data.`,
-    popupDesc: `A full-stack app that allows users to log 
-    in, browse, reserve, and manage table reservations, 
-    enhancing their dining experience. The app utilizes 
+    popupDesc: `A full-stack app that allows users to log
+    in, browse, reserve, and manage table reservations,
+    enhancing their dining experience. The app utilizes
     a Rails API to provide data.`,
     languages: ["react", "redux", "javascript", "rails"],
     popTech: ["Rails", "React", "Redux", "JavaScript"],
@@ -48,9 +48,9 @@ const cardData = [
     popupImg: "images/work/desk-card-images/awesome-pop.jpg",
     mobileTitle: "Awesome Books",
     deskTitle: "Awesome Books",
-    desc: `Awesome books is a simple website that displays a list 
+    desc: `Awesome books is a simple website that displays a list
     of books and allows a user to add and remove books from that list`,
-    popupDesc: `Awesome books is a simple website that displays a list 
+    popupDesc: `Awesome books is a simple website that displays a list
     of books and allows a user to add and remove books from that list`,
     tags: ["html", "css", "javascript"],
     popTech: ["JavaScript", "CSS", "HTML"],
@@ -64,10 +64,10 @@ const cardData = [
     popupImg: "images/work/desk-card-images/todo-pop.jpg",
     mobileTitle: "To Do List",
     deskTitle: "To Do List",
-    desc: `An app that helps users to organize their day. It lists the 
+    desc: `An app that helps users to organize their day. It lists the
     things that need to be done and allows users to mark them as complete`,
-    popupDesc: `This is an app that allow users to add a list of tasks 
-    that they plan to complete. Once the tasks have been completed, 
+    popupDesc: `This is an app that allow users to add a list of tasks
+    that they plan to complete. Once the tasks have been completed,
     the user can mark them as complete and remove them from the list. Built with JavaScript.`,
     tags: ["html", "css", "javascript"],
     popTech: ["JavaScript", "CSS", "HTML"],
@@ -81,10 +81,10 @@ const cardData = [
     popupImg: "images/work/desk-card-images/leaderboard-pop.jpg",
     mobileTitle: "Leaderboard",
     deskTitle: "Leaderboard",
-    desc: `The Leaderboard app displays scores submitted by different players. 
+    desc: `The Leaderboard app displays scores submitted by different players.
     It also allows users to submit their score`,
-    popupDesc: `This app allows a user to submit their score. It also shows 
-    scores previously submitted by other players. All data is preserved by 
+    popupDesc: `This app allows a user to submit their score. It also shows
+    scores previously submitted by other players. All data is preserved by
     the external leaderboard API service`,
     tags: ["html", "css", "javascript"],
     popTech: ["API", "JavaScript", "CSS", "HTML"],
@@ -98,10 +98,10 @@ const cardData = [
     popupImg: "images/work/desk-card-images/math-pop.jpg",
     mobileTitle: "Math magicians",
     deskTitle: "Math magicians",
-    desc: `This is a Single Page App (SPA) that allows users to: - Make simple 
+    desc: `This is a Single Page App (SPA) that allows users to: - Make simple
     calculations - Read a random math-related quote`,
-    popupDesc: `Math Magicians is an app for all fans of mathematics. 
-    It is a Single Page App (SPA) that allows users to: - Make simple 
+    popupDesc: `Math Magicians is an app for all fans of mathematics.
+    It is a Single Page App (SPA) that allows users to: - Make simple
     calculations - Read a random math-related quote`,
     tags: ["react", "javascript", "css"],
     popTech: ["React", "JavaScript"],
@@ -116,7 +116,7 @@ const cardData = [
     mobileTitle: "Bookstore",
     deskTitle: "Bookstore",
     desc: "This is an app that allows a user to add a book, display a list of books, and remove a selected book",
-    popupDesc: `This is an app that allows a user to add a book, display a list of books, and remove a selected book. 
+    popupDesc: `This is an app that allows a user to add a book, display a list of books, and remove a selected book.
       All data is preserved by the external Bookstore API service`,
     tags: ["react", "redux", "javascript"],
     popTech: ["API", "React", "Redux", "JavaScript"],
@@ -130,9 +130,9 @@ const cardData = [
     popupImg: "images/work/desk-card-images/metrics-pop.jpg",
     mobileTitle: "Metrics web App",
     deskTitle: "Metrics web App",
-    desc: `This is a web app that allows users to see and 
+    desc: `This is a web app that allows users to see and
     compare metrics from different companies. Companies data is provided by Finacial Modelling Prep API`,
-    popupDesc: `This is a web(mobile-focused) app that allows users to see and 
+    popupDesc: `This is a web(mobile-focused) app that allows users to see and
     compare live metrics from different companies. Companies data is provided by Finacial Modelling Prep API.`,
     tags: ["react", "redux", "javascript"],
     popTech: ["API", "React", "Redux", "JavaScript"],
@@ -148,7 +148,7 @@ const gridContainer = document.querySelector(".grid-container");
 const displayFeaturedWork = (array) => {
   const featuredWorkString = array
     .map(
-      (feature) => `<div class="mobile-gym"><img  src=${
+      (feature) => `<div class="mobile-gym"><img src=${
         feature.mobileImg
       } alt="Gymfit image"></div>
     <div class="desktop-gym"><img  src=${
@@ -159,13 +159,13 @@ const displayFeaturedWork = (array) => {
         <p class="para">
         ${feature.desc}
         </p>
-        
+
         <ul class="langs">
             ${feature.languages
               .map((lang) => `<li class="lang"><a href="#">${lang}</a></li>`)
               .join("")}
         </ul>
-        
+
         <div class="btn-center">
             <button class="btn  button see-featured" data-id=${feature.id} >
                 see project
@@ -201,7 +201,7 @@ const displayCardString = (array) => {
                 <ul class="tags">
                 ${card.tags
                   .map((tag) => `<li class="lang"><a href="#">${tag}</a></li>`)
-                  .join("")} 
+                  .join("")}
                 </ul>
             </div>
         </div>
@@ -246,7 +246,7 @@ const featuredModal = () => {
           </div>
           <div class="modal-tags">
             <ul>
-              
+
               ${item.popTech
                 .map(
                   (tech) => `<li class="modal-tag"><a href="">${tech}</a></li>`
@@ -276,7 +276,7 @@ const featuredModal = () => {
             </p>
             <p class="modal-descD">
               ${item.popupDesc}
-              
+
             </p>
             <div class="modal-btns">
               <button>
@@ -355,7 +355,7 @@ const modalPopup = () => {
             </div>
             <div class="modal-tags">
               <ul>
-                
+
                 ${item.popTech
                   .map(
                     (tech) =>
@@ -386,7 +386,7 @@ const modalPopup = () => {
               </p>
               <p class="modal-descD">
                 ${item.popupDesc}
-                
+
               </p>
               <div class="modal-btns">
                 <button>
