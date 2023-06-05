@@ -166,6 +166,7 @@ body {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
@@ -325,6 +326,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 327px;
+
   /* grid-template-columns: repeat(auto-fit, minmax(327px, 400px)); */
   grid-auto-rows: 386px;
   row-gap: 24px;
