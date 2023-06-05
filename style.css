@@ -24,10 +24,19 @@ body {
 
 .header {
   background: #3c3a39;
-  padding: 12px 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
 }
 
 .logo {
@@ -147,6 +156,20 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.08em;
+  animation: typing 6s steps(30, end) infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .description {
@@ -216,7 +239,7 @@ body {
 }
 
 .mobile-gym {
-  width: 327px;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -303,6 +326,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 327px;
+
+  /* grid-template-columns: repeat(auto-fit, minmax(327px, 400px)); */
   grid-auto-rows: 386px;
   row-gap: 24px;
   justify-content: center;
@@ -872,6 +897,7 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #fff;
+    letter-spacing: 0.18em;
   }
 
   .description {
@@ -935,8 +961,12 @@ body {
   .work .desktop-gym {
     display: block;
     margin: 0 24px;
-    width: 100%;
+    width: 93%;
     border: 4px solid #f55800;
+  }
+
+  .work .desktop-gym img {
+    width: 100%;
   }
 
   .work .right-block {
@@ -1268,6 +1298,10 @@ body {
 }
 
 @media screen and (min-width: 1240px) {
+  .work .desktop-gym {
+    width: 100%;
+  }
+
   /* About section */
   .about .top-block {
     background: url(images/about/desktop-about.svg) no-repeat right top;
