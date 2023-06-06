@@ -496,6 +496,7 @@ body {
   text-transform: capitalize;
   padding: 12px;
   border: none;
+  cursor: pointer;
 }
 
 .about .about-hr {
