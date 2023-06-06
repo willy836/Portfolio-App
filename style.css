@@ -325,8 +325,6 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 327px;
-
   grid-template-columns: minmax(327px, 375px);
   grid-auto-rows: 386px;
   row-gap: 24px;
