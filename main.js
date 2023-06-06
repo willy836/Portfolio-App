@@ -19,24 +19,24 @@ link.forEach((linkItem) => {
 const featuredData = [
   {
     id: '7',
-    mobileImg: 'images/work/sleekdine-mob.png',
-    desktopImg: 'images/work/sleekdine-desk.png',
-    popupImg: 'images/work/sleekdine-desk.png',
-    mobileTitle: 'Restaurant Table Reservation',
-    deskTitle: 'Restaurant Table Reservation',
-    title: 'Restaurant Table Reservation',
-    desc: `A full-stack app that allows users to log
-    in, browse, reserve, and manage table reservations,
-    enhancing their dining experience. The app utilizes
-    a Rails API to provide data.`,
-    popupDesc: `A full-stack app that allows users to log
-    in, browse, reserve, and manage table reservations,
-    enhancing their dining experience. The app utilizes
-    a Rails API to provide data.`,
-    languages: ['react', 'redux', 'javascript', 'rails'],
-    popTech: ['Rails', 'React', 'Redux', 'JavaScript'],
-    seeLive: 'https://book-reservation-h17l.onrender.com/',
-    seeSource: 'https://github.com/george827/Book-reservation-Front_End',
+    mobileImg: 'images/work/space-travelers.png',
+    desktopImg: 'images/work/space-travelers.png',
+    popupImg: 'images/work/space-travelers.png',
+    mobileTitle: "Space Travelers' Hub",
+    deskTitle: "Space Travelers' Hub",
+    title: "Space Travelers' Hub",
+    desc: `This is a web application for a company that provides 
+    commercial and scientific space travel services. The app allows 
+    users to book rockets and join selected space missions. The app 
+    utilizes Space-X API to provide real live data.`,
+    popupDesc: `This is a web application for a company that provides 
+    commercial and scientific space travel services. The app allows 
+    users to book rockets and join selected space missions. The app 
+    utilizes Space-X API to provide real live data.`,
+    languages: ['react', 'redux', 'javascript'],
+    popTech: ['React', 'Redux', 'JavaScript'],
+    seeLive: 'https://space-travelers-hub-836.netlify.app/',
+    seeSource: 'https://github.com/harshitajain06/ReactGroupProject',
   },
 ];
 
@@ -45,13 +45,13 @@ const cardData = [
     id: '1',
     mobileImg: 'images/work/desk-card-images/project1.jpg',
     desktopImg: 'images/work/desk-card-images/project1.jpg',
-    popupImg: 'images/work/desk-card-images/awesome-pop.jpg',
+    popupImg: 'images/work/desk-card-images/awesome-b-pop.png',
     mobileTitle: 'Awesome Books',
     deskTitle: 'Awesome Books',
-    desc: `Awesome books is a simple website that displays a list
-    of books and allows a user to add and remove books from that list`,
-    popupDesc: `Awesome books is a simple website that displays a list
-    of books and allows a user to add and remove books from that list`,
+    desc: `Awesome Books is a simple website that displays a list
+    of books and allows a user to add and remove books from that list.`,
+    popupDesc: `Awesome Books is a simple website that displays a list
+    of books and allows a user to add and remove books from that list.`,
     tags: ['html', 'css', 'javascript'],
     popTech: ['JavaScript', 'CSS', 'HTML'],
     seeLive: 'https://willy836.github.io/Awesome-Books/',
@@ -61,12 +61,12 @@ const cardData = [
     id: '2',
     mobileImg: 'images/work/desk-card-images/project2.jpg',
     desktopImg: 'images/work/desk-card-images/project2.jpg',
-    popupImg: 'images/work/desk-card-images/todo-pop.jpg',
+    popupImg: 'images/work/desk-card-images/todo-list-pop.png',
     mobileTitle: 'To Do List',
     deskTitle: 'To Do List',
     desc: `An app that helps users to organize their day. It lists the
-    things that need to be done and allows users to mark them as complete`,
-    popupDesc: `This is an app that allow users to add a list of tasks
+    things that need to be done and allows users to mark them as complete.`,
+    popupDesc: `This is an app that allows users to add a list of tasks
     that they plan to complete. Once the tasks have been completed,
     the user can mark them as complete and remove them from the list. Built with JavaScript.`,
     tags: ['html', 'css', 'javascript'],
@@ -78,14 +78,14 @@ const cardData = [
     id: '3',
     mobileImg: 'images/work/desk-card-images/leaderboard.jpg',
     desktopImg: 'images/work/desk-card-images/leaderboard.jpg',
-    popupImg: 'images/work/desk-card-images/leaderboard-pop.jpg',
+    popupImg: 'images/work/desk-card-images/leaderboard-pop.png',
     mobileTitle: 'Leaderboard',
     deskTitle: 'Leaderboard',
     desc: `The Leaderboard app displays scores submitted by different players.
-    It also allows users to submit their score`,
+    It also allows users to submit their scores.`,
     popupDesc: `This app allows a user to submit their score. It also shows
     scores previously submitted by other players. All data is preserved by
-    the external leaderboard API service`,
+    the external leaderboard API service.`,
     tags: ['html', 'css', 'javascript'],
     popTech: ['API', 'JavaScript', 'CSS', 'HTML'],
     seeLive: 'https://leaderboard-836.netlify.app/',
@@ -95,29 +95,29 @@ const cardData = [
     id: '4',
     mobileImg: 'images/work/desk-card-images/calc.jpg',
     desktopImg: 'images/work/desk-card-images/calc.jpg',
-    popupImg: 'images/work/desk-card-images/math-pop.jpg',
+    popupImg: 'images/work/desk-card-images/math-magicians-pop.png',
     mobileTitle: 'Math magicians',
     deskTitle: 'Math magicians',
     desc: `This is a Single Page App (SPA) that allows users to: - Make simple
-    calculations - Read a random math-related quote`,
+    calculations - Read a random math-related quote.`,
     popupDesc: `Math Magicians is an app for all fans of mathematics.
     It is a Single Page App (SPA) that allows users to: - Make simple
-    calculations - Read a random math-related quote`,
+    calculations - Read a random math-related quote.`,
     tags: ['react', 'javascript', 'css'],
     popTech: ['React', 'JavaScript'],
-    seeLive: 'https://math-magicians-tfgn.onrender.com/Calculator',
+    seeLive: 'https://math-magicians-836.netlify.app/',
     seeSource: 'https://github.com/willy836/Math-Magicians',
   },
   {
     id: '5',
     mobileImg: 'images/work/desk-card-images/bookstore.jpg',
     desktopImg: 'images/work/desk-card-images/bookstore.jpg',
-    popupImg: 'images/work/desk-card-images/bookstore-pop.jpg',
+    popupImg: 'images/work/desk-card-images/bookstore-app-pop.png',
     mobileTitle: 'Bookstore',
     deskTitle: 'Bookstore',
-    desc: 'This is an app that allows a user to add a book, display a list of books, and remove a selected book',
+    desc: 'This is an app that allows a user to add a book, display a list of books, and remove a selected book.',
     popupDesc: `This is an app that allows a user to add a book, display a list of books, and remove a selected book.
-      All data is preserved by the external Bookstore API service`,
+      All data is preserved by the external Bookstore API service.`,
     tags: ['react', 'redux', 'javascript'],
     popTech: ['API', 'React', 'Redux', 'JavaScript'],
     seeLive: 'https://bookstore-app-willy836.netlify.app/',
@@ -127,13 +127,13 @@ const cardData = [
     id: '6',
     mobileImg: 'images/work/desk-card-images/metrics-app.jpg',
     desktopImg: 'images/work/desk-card-images/metrics-app.jpg',
-    popupImg: 'images/work/desk-card-images/metrics-pop.jpg',
+    popupImg: 'images/work/desk-card-images/metrics-web-pop.png',
     mobileTitle: 'Metrics web App',
     deskTitle: 'Metrics web App',
     desc: `This is a web app that allows users to see and
-    compare metrics from different companies. Companies data is provided by Finacial Modelling Prep API`,
+    compare metrics from different companies. Companies data is provided by Financial Modelling Prep API.`,
     popupDesc: `This is a web(mobile-focused) app that allows users to see and
-    compare live metrics from different companies. Companies data is provided by Finacial Modelling Prep API.`,
+    compare live metrics from different companies. Companies data is provided by Financial Modelling Prep API.`,
     tags: ['react', 'redux', 'javascript'],
     popTech: ['API', 'React', 'Redux', 'JavaScript'],
     seeLive: 'https://react-capstone-willy836.netlify.app/',
@@ -493,4 +493,20 @@ form.addEventListener('input', () => {
   object.msg = message.value;
 
   localStorage.setItem('data', JSON.stringify(object));
+});
+
+// Download Resume
+const btnContainer = document.getElementById('resume-btn-container');
+const downloadResume = document.getElementById('download-resume');
+downloadResume.addEventListener('click', () => {
+  const fileUrl = 'https://docs.google.com/document/d/14E-KmFPIqY7wODigqrfq2qJN6jxftduu_l2lzJk5OtQ/export?format=pdf';
+  const filename = 'wilson-kimiri-resume.pdf';
+
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.download = filename;
+
+  btnContainer.appendChild(link);
+  link.click();
+  btnContainer.removeChild(link);
 });

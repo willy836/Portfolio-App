@@ -325,9 +325,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 327px;
-
-  /* grid-template-columns: repeat(auto-fit, minmax(327px, 400px)); */
+  grid-template-columns: minmax(327px, 375px);
   grid-auto-rows: 386px;
   row-gap: 24px;
   justify-content: center;
@@ -340,6 +338,8 @@ body {
   justify-content: flex-end;
   overflow: auto;
   position: relative;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .grid-item img {
@@ -496,6 +496,7 @@ body {
   text-transform: capitalize;
   padding: 12px;
   border: none;
+  cursor: pointer;
 }
 
 .about .about-hr {
@@ -1010,6 +1011,11 @@ body {
     margin: 0 auto;
   }
 
+  .work .grid-item {
+    width: 100%;
+    margin: 0;
+  }
+
   .work .mob-img {
     display: none;
   }
@@ -1185,6 +1191,11 @@ body {
 
   .work .grid-container {
     column-gap: 37px;
+  }
+
+  .work .grid-item {
+    width: 100%;
+    margin: 0;
   }
 }
 
