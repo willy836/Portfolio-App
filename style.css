@@ -246,7 +246,8 @@ body {
 
 .mobile-gym img {
   width: 100%;
-  border: 3px solid #f55800;
+  object-fit: cover;
+  border: 3px solid #ff6b00;
 }
 
 .desktop-gym {
@@ -333,7 +334,7 @@ body {
 }
 
 .grid-item {
-  border: 1px solid rgb(65, 218, 65);
+  border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -345,11 +346,12 @@ body {
 
 .grid-item img {
   width: 100%;
+  object-fit: cover;
   height: auto;
 }
 
 .card-img {
-  position: absolute;
+  position: relative;
 }
 
 .desk-img {
@@ -358,8 +360,19 @@ body {
 
 .card-content {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  color: #fff;
   gap: 22px;
 }
 
@@ -769,7 +782,7 @@ body {
   height: auto;
 }
 
-.feature-modal-img {
+.modal-img-border {
   border: 4px solid #f55800;
 }
 
@@ -964,11 +977,12 @@ body {
     display: block;
     margin: 0 24px;
     width: 93%;
-    border: 4px solid #f55800;
   }
 
   .work .desktop-gym img {
     width: 100%;
+    object-fit: cover;
+    border: 5px solid #ff6b00;
   }
 
   .work .right-block {
