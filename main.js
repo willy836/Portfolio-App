@@ -19,125 +19,134 @@ link.forEach((linkItem) => {
 const featuredData = [
   {
     id: '7',
-    mobileImg: 'images/work/space-travelers.png',
-    desktopImg: 'images/work/space-travelers.png',
-    popupImg: 'images/work/space-travelers.png',
-    mobileTitle: "Space Travelers' Hub",
-    deskTitle: "Space Travelers' Hub",
-    title: "Space Travelers' Hub",
-    desc: `This is a web application for a company that provides 
-    commercial and scientific space travel services. The app allows 
-    users to book rockets and join selected space missions. The app 
-    utilizes Space-X API to provide real live data.`,
-    popupDesc: `This is a web application for a company that provides 
-    commercial and scientific space travel services. The app allows 
-    users to book rockets and join selected space missions. The app 
-    utilizes Space-X API to provide real live data.`,
-    languages: ['react', 'redux', 'javascript'],
-    popTech: ['React', 'Redux', 'JavaScript'],
-    seeLive: 'https://space-travelers-hub-836.netlify.app/',
-    seeSource: 'https://github.com/harshitajain06/ReactGroupProject',
+    mobileImg: 'images/work/tidecommerce.png',
+    desktopImg: 'images/work/tidecommerce.png',
+    popupImg: 'images/work/tidecommerce.png',
+    mobileTitle: 'Tide Commerce',
+    deskTitle: 'Tide Commerce',
+    title: 'Tide Commerce',
+    desc: `This is an online store where users can browse products, 
+    add items to a shopping cart, proceed to checkout and make payments.`,
+    popupDesc: `This is an online store where users can browse products, 
+    add items to a shopping cart, proceed to checkout and make payments.`,
+    languages: ['laravel', 'react', 'typescript'],
+    popTech: [
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'React',
+      'Redux',
+      'TypeScript',
+      'Tailwind',
+    ],
+    seeLive: 'https://e-commerce-frontend-willy836.vercel.app/',
+    seeSource: 'https://github.com/willy836/E-Commerce-Frontend.git',
   },
 ];
 
 const cardData = [
   {
     id: '1',
-    mobileImg: 'images/work/desk-card-images/project1.jpg',
-    desktopImg: 'images/work/desk-card-images/project1.jpg',
-    popupImg: 'images/work/desk-card-images/awesome-b-pop.png',
-    mobileTitle: 'Awesome Books',
-    deskTitle: 'Awesome Books',
-    desc: `Awesome Books is a simple website that displays a list
-    of books and allows a user to add and remove books from that list.`,
-    popupDesc: `Awesome Books is a simple website that displays a list
-    of books and allows a user to add and remove books from that list.`,
-    tags: ['html', 'css', 'javascript'],
-    popTech: ['JavaScript', 'CSS', 'HTML'],
-    seeLive: 'https://willy836.github.io/Awesome-Books/',
-    seeSource: 'https://github.com/willy836/Awesome-Books',
+    mobileImg: 'images/work/desk-card-images/reserve-table.png',
+    desktopImg: 'images/work/desk-card-images/reserve-table.png',
+    popupImg: 'images/work/desk-card-images/reserve-table-pop.png',
+    mobileTitle: 'SleekDine',
+    deskTitle: 'SleekDine',
+    desc: `An app that allows a user to register, reserve a table and 
+    cancel their reservations at their favorite restaurant.`,
+    popupDesc: `An app that allows a user to register, reserve a table and 
+    cancel their reservations at their favorite restaurant. 
+    The app is powered by a Node.js API backend.`,
+    tags: ['node.js', 'express', 'react'],
+    popTech: ['Node.js', 'Express', 'MongoDB', 'React', 'Redux', 'JavaScript'],
+    seeLive: 'https://reserve-table.vercel.app/',
+    seeSource: 'https://github.com/willy836/Reserve-table-API.git',
   },
   {
     id: '2',
-    mobileImg: 'images/work/desk-card-images/project2.jpg',
-    desktopImg: 'images/work/desk-card-images/project2.jpg',
-    popupImg: 'images/work/desk-card-images/todo-list-pop.png',
-    mobileTitle: 'To Do List',
-    deskTitle: 'To Do List',
-    desc: `An app that helps users to organize their day. It lists the
-    things that need to be done and allows users to mark them as complete.`,
-    popupDesc: `This is an app that allows users to add a list of tasks
-    that they plan to complete. Once the tasks have been completed,
-    the user can mark them as complete and remove them from the list. Built with JavaScript.`,
-    tags: ['html', 'css', 'javascript'],
-    popTech: ['JavaScript', 'CSS', 'HTML'],
-    seeLive: 'https://willy836.github.io/To-Do-List/',
-    seeSource: 'https://github.com/willy836/To-Do-List',
+    mobileImg: 'images/work/desk-card-images/chatinterface.png',
+    desktopImg: 'images/work/desk-card-images/chatinterface.png',
+    popupImg: 'images/work/desk-card-images/chatinterface-pop.png',
+    mobileTitle: 'ChatInterface',
+    deskTitle: 'ChatInterface',
+    desc: `An app that allows users to interact with the bot, view bot responses, 
+    and have a basic history of the conversation.`,
+    popupDesc: `This is a simple chat interface built using Laravel and integrated 
+    with OpenAI. The web app allows users to interact with the bot, view bot 
+    responses, and have a basic history of the conversation.`,
+    tags: ['PHP', 'Laravel', 'MySQL'],
+    popTech: ['PHP', 'Laravel', 'MySQL', 'Tailwind'],
+    seeLive: 'https://chatinterface.chickenkiller.com/',
+    seeSource: 'https://github.com/willy836/ChatInterface.git',
   },
   {
     id: '3',
-    mobileImg: 'images/work/desk-card-images/leaderboard.jpg',
-    desktopImg: 'images/work/desk-card-images/leaderboard.jpg',
-    popupImg: 'images/work/desk-card-images/leaderboard-pop.png',
-    mobileTitle: 'Leaderboard',
-    deskTitle: 'Leaderboard',
-    desc: `The Leaderboard app displays scores submitted by different players.
-    It also allows users to submit their scores.`,
-    popupDesc: `This app allows a user to submit their score. It also shows
-    scores previously submitted by other players. All data is preserved by
-    the external leaderboard API service.`,
-    tags: ['html', 'css', 'javascript'],
-    popTech: ['API', 'JavaScript', 'CSS', 'HTML'],
-    seeLive: 'https://leaderboard-836.netlify.app/',
-    seeSource: 'https://github.com/willy836/Leaderboard',
-  },
-  {
-    id: '4',
-    mobileImg: 'images/work/desk-card-images/calc.jpg',
-    desktopImg: 'images/work/desk-card-images/calc.jpg',
-    popupImg: 'images/work/desk-card-images/math-magicians-pop.png',
-    mobileTitle: 'Math magicians',
-    deskTitle: 'Math magicians',
-    desc: `This is a Single Page App (SPA) that allows users to: - Make simple
-    calculations - Read a random math-related quote.`,
-    popupDesc: `Math Magicians is an app for all fans of mathematics.
-    It is a Single Page App (SPA) that allows users to: - Make simple
-    calculations - Read a random math-related quote.`,
-    tags: ['react', 'javascript', 'css'],
-    popTech: ['React', 'JavaScript'],
-    seeLive: 'https://math-magicians-836.netlify.app/',
-    seeSource: 'https://github.com/willy836/Math-Magicians',
-  },
-  {
-    id: '5',
-    mobileImg: 'images/work/desk-card-images/bookstore.jpg',
-    desktopImg: 'images/work/desk-card-images/bookstore.jpg',
-    popupImg: 'images/work/desk-card-images/bookstore-app-pop.png',
-    mobileTitle: 'Bookstore',
-    deskTitle: 'Bookstore',
-    desc: 'This is an app that allows a user to add a book, display a list of books, and remove a selected book.',
-    popupDesc: `This is an app that allows a user to add a book, display a list of books, and remove a selected book.
-      All data is preserved by the external Bookstore API service.`,
-    tags: ['react', 'redux', 'javascript'],
-    popTech: ['API', 'React', 'Redux', 'JavaScript'],
-    seeLive: 'https://bookstore-app-willy836.netlify.app/',
-    seeSource: 'https://github.com/willy836/Bookstore',
-  },
-  {
-    id: '6',
-    mobileImg: 'images/work/desk-card-images/metrics-app.jpg',
-    desktopImg: 'images/work/desk-card-images/metrics-app.jpg',
-    popupImg: 'images/work/desk-card-images/metrics-web-pop.png',
+    mobileImg: 'images/work/desk-card-images/metrics-web-app.png',
+    desktopImg: 'images/work/desk-card-images/metrics-web-app.png',
+    popupImg: 'images/work/desk-card-images/metrics-pop.png',
     mobileTitle: 'Metrics web App',
     deskTitle: 'Metrics web App',
     desc: `This is a web app that allows users to see and
-    compare metrics from different companies. Companies data is provided by Financial Modelling Prep API.`,
+    compare metrics from different companies.`,
     popupDesc: `This is a web(mobile-focused) app that allows users to see and
-    compare live metrics from different companies. Companies data is provided by Financial Modelling Prep API.`,
+    compare live metrics from different companies. Companies data is provided by 
+    Financial Modelling Prep API.`,
     tags: ['react', 'redux', 'javascript'],
-    popTech: ['API', 'React', 'Redux', 'JavaScript'],
+    popTech: ['API', 'React', 'Redux', 'JavaScript', 'CSS'],
     seeLive: 'https://react-capstone-willy836.netlify.app/',
     seeSource: 'https://github.com/willy836/React-Capstone',
+  },
+  {
+    id: '4',
+    mobileImg: 'images/work/desk-card-images/space-x.png',
+    desktopImg: 'images/work/desk-card-images/space-x.png',
+    popupImg: 'images/work/desk-card-images/space-x-pop.png',
+    mobileTitle: "Space Travelers' Hub",
+    deskTitle: "Space Travelers' Hub",
+    desc: `This app allows users to book rockets and join selected space 
+    missions. The app utilizes Space-X API to provide real live data.`,
+    popupDesc: `A web app for a company that provides space travel services. 
+    The app allows users to book rockets and join selected space missions. The app 
+    utilizes Space-X API to provide real live data.`,
+    tags: ['react', 'redux', 'javascript'],
+    popTech: ['React', 'Redux', 'JavaScript', 'CSS'],
+    seeLive: 'https://space-travelers-hub-836.netlify.app/',
+    seeSource: 'https://github.com/harshitajain06/ReactGroupProject',
+  },
+  {
+    id: '5',
+    mobileImg: 'images/work/desk-card-images/meals-app.png',
+    desktopImg: 'images/work/desk-card-images/meals-app.png',
+    popupImg: 'images/work/desk-card-images/meals-app-pop.png',
+    mobileTitle: 'Meals App',
+    deskTitle: 'Meals App',
+    desc: `An app that allows users to view various meals, comment, like, 
+    and get tips on how to prepare them.`,
+    popupDesc: `A user-friendly front-end application that allows users to view 
+    various meals, comment, like, and get tips on how to prepare them. The app 
+    utilizes Meals DB API to provide data.`,
+    tags: ['javascript', 'css', 'html'],
+    popTech: ['JavaScript', 'CSS3', 'HTML5'],
+    seeLive: 'https://meals-app-js-group-capstone.netlify.app/',
+    seeSource: 'https://github.com/Tekhlay/JS-GROUP-CAPSTONE-PROJECT',
+  },
+  {
+    id: '6',
+    mobileImg: 'images/work/desk-card-images/concert.png',
+    desktopImg: 'images/work/desk-card-images/concert.png',
+    popupImg: 'images/work/desk-card-images/concert-pop.png',
+    mobileTitle: 'Theatre Drama Bliss',
+    deskTitle: 'Theatre Drama Bliss',
+    desc: ` A landing page (with home and about pages) for hosting annual drama 
+    events with venue, date, and participants.`,
+    popupDesc: ` A landing page for hosting annual drama 
+    events with venue, date, and participants. The app also provides information about 
+    dates and venues where the recent two events were held.`,
+    tags: ['javascript', 'css', 'html'],
+    popTech: ['JavaScript', 'CSS3', 'HTML5'],
+    seeLive: 'https://willy836.github.io/First-Capstone-Project-Concert-Page/',
+    seeSource:
+      'https://github.com/willy836/First-Capstone-Project-Concert-Page',
   },
 ];
 
@@ -265,7 +274,7 @@ const featuredModal = () => {
           </div>
           <div class="modal-imgD">
             <img
-              class="modal-image feature-modal-img"
+              class="modal-image modal-img-border"
               src=${item.popupImg}
               alt="Modal desktop image"
             />
@@ -374,7 +383,7 @@ const modalPopup = () => {
             </div>
             <div class="modal-imgD">
               <img
-                class="modal-image"
+                class="modal-image modal-img-border"
                 src=${item.popupImg}
                 alt="Modal desktop image"
               />
