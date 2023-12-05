@@ -54,11 +54,9 @@ const cardData = [
     deskTitle: "SleekDine",
     desc: `An app that allows a user to register, reserve a table and 
     cancel their reservations at their favorite restaurant.`,
-    popupDesc: `This is an innovative restaurant table reservation 
-    application designed to elevate your dining experience. Connecting 
-    diners with their desired culinary destination, this user-friendly 
-    app empowers users to browse and reserve available tables at their 
-    favorite restaurant. The app is powered by a Node.js API backend.`,
+    popupDesc: `An app that allows a user to register, reserve a table and 
+    cancel their reservations at their favorite restaurant. 
+    The app is powered by a Node.js API backend.`,
     tags: ["node.js", "express", "react"],
     popTech: ["Node.js", "Express", "MongoDB", "React", "Redux", "JavaScript"],
     seeLive: "https://reserve-table.vercel.app/",
@@ -107,12 +105,11 @@ const cardData = [
     deskTitle: "Space Travelers' Hub",
     desc: `This app allows users to book rockets and join selected space 
     missions. The app utilizes Space-X API to provide real live data.`,
-    popupDesc: `This is a web application for a company that provides 
-    commercial and scientific space travel services. The app allows 
-    users to book rockets and join selected space missions. The app 
+    popupDesc: `A web app for a company that provides space travel services. 
+    The app allows users to book rockets and join selected space missions. The app 
     utilizes Space-X API to provide real live data.`,
     tags: ["react", "redux", "javascript"],
-    popTech: ["API", "React", "Redux", "JavaScript", "CSS"],
+    popTech: ["React", "Redux", "JavaScript", "CSS"],
     seeLive: "https://space-travelers-hub-836.netlify.app/",
     seeSource: "https://github.com/harshitajain06/ReactGroupProject",
   },
@@ -127,8 +124,7 @@ const cardData = [
     and get tips on how to prepare them.`,
     popupDesc: `A user-friendly front-end application that allows users to view 
     various meals, comment, like, and get tips on how to prepare them. The app 
-    utilizes Meals DB API to provide data. Engage with the community through 
-    comments and likes, and join us in celebrating the joy of cooking and discovering new flavors!`,
+    utilizes Meals DB API to provide data.`,
     tags: ["javascript", "css", "html"],
     popTech: ["JavaScript", "CSS3", "HTML5"],
     seeLive: "https://meals-app-js-group-capstone.netlify.app/",
@@ -143,7 +139,7 @@ const cardData = [
     deskTitle: "Theatre Drama Bliss",
     desc: ` A landing page (with home and about pages) for hosting annual drama 
     events with venue, date, and participants.`,
-    popupDesc: ` A landing page (with home and about pages) for hosting annual drama 
+    popupDesc: ` A landing page for hosting annual drama 
     events with venue, date, and participants. The app also provides information about 
     dates and venues where the recent two events were held.`,
     tags: ["javascript", "css", "html"],
